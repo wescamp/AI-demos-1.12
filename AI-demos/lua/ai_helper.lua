@@ -8,7 +8,7 @@ local ai_helper = {}
 ----- Debugging helper functions ------
 
 function ai_helper.show_messages()
-    -- Returns true or false (hard-coded).  To be used to
+    -- Returns true or false (hard-coded). To be used to
     -- show messages if in debug mode
     -- Just edit the following line (easier than trying to set WML variable)
     local show_messages_flag = false
@@ -17,7 +17,7 @@ function ai_helper.show_messages()
 end
 
 function ai_helper.print_exec()
-    -- Returns true or false (hard-coded).  To be used to
+    -- Returns true or false (hard-coded). To be used to
     -- show which CA is being executed if in debug mode
     -- Just edit the following line (easier than trying to set WML variable)
     local print_exec_flag = true
@@ -26,7 +26,7 @@ function ai_helper.print_exec()
 end
 
 function ai_helper.print_eval()
-    -- Returns true or false (hard-coded).  To be used to
+    -- Returns true or false (hard-coded). To be used to
     -- show which CA is being evaluated if in debug mode
     -- Just edit the following line (easier than trying to set WML variable)
     local print_eval_flag = false
@@ -45,7 +45,7 @@ function ai_helper.done_eval_messages(start_time, ca_name)
         W.message{
             speaker = 'narrator',
             caption = 'Evaluation of candidate action ' .. ca_name .. ' took ' .. dt .. ' seconds',
-            message = 'This took a really long time (which it should not).  If you can, would you mind sending us a screen grab of this situation?  Thanks!'
+            message = 'This took a really long time (which it should not). If you can, would you mind sending us a screen grab of this situation?  Thanks!'
         }
     end
 end
@@ -60,18 +60,33 @@ function ai_helper.clear_labels()
     end
 end
 
-function ai_helper.put_labels(map, factor)
+function ai_helper.put_labels(map, cfg)
     -- Take map (location set) and put label containing 'value' onto the map
-    -- factor: multiply by 'factor' if set
     -- print 'nan' if element exists but is not a number
+    -- cfg: table with optional parameters:
+    --   - show_coords: (boolean) use hex coordinates as labels instead of value
+    --   - factor=1: (number) if value is a number, multiply by this factor
+    --   - keys: (array) if the value to be displayed is a subelement of the LS data,
+    --     use these keys to access it.  For example, if we want to display data[3]
+    --     set keys = { 3 }, if it's data.arg[3], set keys = { 'arg', 3 }
 
-    factor = factor or 1
+    cfg = cfg or {}
+    local factor = cfg.factor or 1
 
     ai_helper.clear_labels()
+
     map:iter(function(x, y, data)
-          local out = tonumber(data) or 'nan'
-          if (out ~= 'nan') then out = out * factor end
-          W.label { x = x, y = y, text = out }
+        local out
+        if cfg.show_coords then
+            out = x .. ',' .. y
+        else
+            if cfg.keys then
+                for i,k in ipairs(cfg.keys) do data = data[k] end
+            end
+            out = tonumber(data) or 'nan'
+        end
+        if (type(out) == 'number') then out = out * factor end
+        W.label { x = x, y = y, text = out }
     end)
 end
 
@@ -108,11 +123,6 @@ function ai_helper.print_ts_delta(start_time, ...)
 end
 
 ----- General functionality and maths helper functions ------
-
-function ai_helper.got_1_11()
-   if not wesnoth.compare_versions then return false end
-   return wesnoth.compare_versions(wesnoth.game_config.version, ">=", "1.11.0")
-end
 
 function ai_helper.filter(input, condition)
     -- equivalent of filter() function in Formula AI
@@ -341,14 +351,13 @@ function ai_helper.get_closest_location(hex, location_filter, unit)
             }
         end
         for k,v in pairs(location_filter) do loc_filter[k] = v end
-        --DBG.dbms(loc_filter)
 
         local locs = wesnoth.get_locations(loc_filter)
 
         if unit then
             for i,l in ipairs(locs) do
                 local movecost = wesnoth.unit_movement_cost(unit, wesnoth.get_terrain(l[1], l[2]))
-                if (movecost < 99) then return l end
+                if (movecost <= unit.max_moves) then return l end
             end
         else
             if locs[1] then return locs[1] end
@@ -362,7 +371,7 @@ end
 
 function ai_helper.get_passable_locations(location_filter, unit)
     -- Finds all locations matching 'location_filter' that are passable for
-    -- 'unit'.  This also excludes hexes on the map border.
+    -- 'unit'. This also excludes hexes on the map border.
     -- 'unit' is optional: if omitted, all hexes matching the filter, but
     -- excluding border hexes are returned
 
@@ -376,12 +385,11 @@ function ai_helper.get_passable_locations(location_filter, unit)
 
     -- If 'unit' is provided, exclude terrain that's impassable for the unit
     -- table.delete() can be slow for large arrays -> build a new table
-
     if unit then
         local locs = {}
         for i,l in ipairs(all_locs) do
             local movecost = wesnoth.unit_movement_cost(unit, wesnoth.get_terrain(l[1], l[2]))
-            if (movecost < 99) then table.insert(locs, l) end
+            if (movecost <= unit.max_moves) then table.insert(locs, l) end
         end
         return locs
     end
@@ -472,7 +480,7 @@ end
 function ai_helper.xyoff(x, y, ori, hex)
     -- Finds hexes at a certain offset from x,y
     -- ori: direction/orientation: north (0), ne (1), se (2), s (3), sw (4), nw (5)
-    -- hex: string for the hex to be queried.  Possible values:
+    -- hex: string for the hex to be queried. Possible values:
     --   's': self, 'u': up, 'lu': left up, 'ld': left down, 'ru': right up, 'rd': right down
     --   This is all relative "looking" in the direction of 'ori'
     -- returns x,y for the queried hex
@@ -583,7 +591,7 @@ function ai_helper.get_live_units(filter)
         } }
     } }
 
-    -- Combine the two filters.  Doing it this way around is much easier (always works, no ifs required),
+    -- Combine the two filters. Doing it this way around is much easier (always works, no ifs required),
     -- but it means we need to make a copy of the filter above, so that the original does not get changed
     table.insert(live_filter, filter_not_petrified)
 
@@ -689,25 +697,23 @@ function ai_helper.get_dst_src_units(units, cfg)
 end
 
 function ai_helper.get_dst_src(units)
-    -- Produces the same output as ai.get_dst_src()   (available in 1.11.0)
-    -- If units is given, use them, otherwise do it for all units on the current side
+    -- If 'units' table is given, use it, otherwise use all units on the current side
 
-    local my_units = {}
-    if units then
-        my_units = units
-    else
-        my_units = wesnoth.get_units { side = wesnoth.current.side }
+    if (not units) then
+        units = wesnoth.get_units { side = wesnoth.current.side }
     end
 
-    return ai_helper.get_dst_src_units(my_units)
+    return ai_helper.get_dst_src_units(units)
 end
 
-function ai_helper.get_enemy_dst_src()
-    -- Produces the same output as ai.get_enemy_dst_src()   (available in 1.11.0)
+function ai_helper.get_enemy_dst_src(enemies)
+    -- If 'enemies' table is given, use it, otherwise use all enemy units
 
-    local enemies = wesnoth.get_units {
-        { "filter_side", { { "enemy_of", { side = wesnoth.current.side} } } }
-    }
+    if (not enemies) then
+        enemies = wesnoth.get_units {
+            { "filter_side", { { "enemy_of", { side = wesnoth.current.side} } } }
+        }
+    end
 
     return ai_helper.get_dst_src_units(enemies, { moves = 'max' })
 end
@@ -1004,15 +1010,15 @@ end
 
 ---------- Attack related helper functions --------------
 
-function ai_helper.get_attacks_unit(unit, cfg)
-    -- Get all attacks a unit can do
+function ai_helper.get_attacks(units, cfg)
+    -- Get all attacks the units stored in 'units' can do
     -- This includes a variety of configurable options, passed in the 'cfg' table
     -- cfg: table with config parameters
     --  moves: "current" (default for units on current side) or "max" (always used for units on other sides)
     --  include_occupied (false): if set, also include hexes occupied by own-side units that can move away
     --  simulate_combat (false): if set, also simulate the combat and return result (this is slow; only set if needed)
 
-    -- Returns {} if no attacks can be done, otherwise table with fields
+    -- Returns {} if no attacks can be done, otherwise table with fields:
     --   dst: { x = x, y = y } of attack position
     --   src: { x = x, y = y } of attacking unit (don't use id, could be ambiguous)
     --   target: { x = x, y = y } of defending unit
@@ -1021,138 +1027,126 @@ function ai_helper.get_attacks_unit(unit, cfg)
 
     cfg = cfg or {}
 
+    local attacks = {}
+    if (not units[1]) then return attacks end
+
+    local side = units[1].side  -- all units need to be on same side
+
     -- 'moves' can be either "current" or "max"
     -- For unit on current side: use "current" by default, or override by cfg.moves
     local moves = cfg.moves or "current"
     -- For unit on any other side, only moves="max" makes sense
-    if (unit.side ~= wesnoth.current.side) then moves = "max" end
+    if (side ~= wesnoth.current.side) then moves = "max" end
 
-    -- Need to find reachable hexes that are
-    -- 1. next to a (non-petrified) enemy unit
-    -- 2. not occupied by a unit of a different side (incl. allies)
-    W.store_reachable_locations {
-        { "filter", { x = unit.x, y = unit.y } },
-        { "filter_location", {
-            { "filter_adjacent_location", {
-                { "filter", {
-                    { "filter_side",
-                        { { "enemy_of", { side = unit.side } } }
-                    },
-                    { "not", {
-                        { "filter_wml", {
-                            { "status", { petrified = "yes" } }  -- This is important!
-                        } }
-                    } }
-                } }
-            } },
-            { "not", {
-                { "filter", { { "not", { side = unit.side } } } }
-            } }
-        } },
-        moves = moves,
-        variable = "tmp_locs"
-    }
-
-    local attack_loc = H.get_variable_array("tmp_locs")
-    W.clear_variable { name = "tmp_locs" }
-    --print("reachable attack locs:", unit.id, #attack_loc)
-
-    -- Variable to store attacks
-    local attacks = {}
-    -- Current position of unit
-    local x1, y1 = unit.x, unit.y
-
-    -- Go through all attack locations
-    for i,p in pairs(attack_loc) do
-
-        -- At this point, units on the side of 'unit' can still be at the attack hex.
-        -- By default, exclude those hexes, but if 'include_occupied' is set
-        -- units that can move away are fine
-
-        -- Flag whether a potential unit_in_way can move away
-        -- We also set this to true if there is no unit in the way
-        local can_move_away = true
-
-        local unit_in_way = wesnoth.get_unit(p.x, p.y)
-        -- If unit_in_way is the unit itself, that doesn't count
-        if unit_in_way and (unit_in_way.x == unit.x) and (unit_in_way.y == unit.y) then unit_in_way = nil end
-
-        -- If there's a unit_in_way, and it is not the unit itself, check whether it can move away
-        if unit_in_way then
-            if (not cfg.include_occupied) then
-                can_move_away = false
-            else
-                local move_away = ai_helper.get_reachable_unocc(unit_in_way, { moves = moves })
-                if (move_away:size() <= 1) then can_move_away = false end
-                --print('Can move away:', unit_in_way.id, can_move_away)
-            end
-        end
-        -- Now can_move_away = true if there's no unit, or if it can move away
-
-        if can_move_away then
-            -- Put 'unit' at this position
-            -- Remove any unit that might be there first, except if this is the unit itself
-            if unit_in_way then wesnoth.extract_unit(unit_in_way) end
-
-            wesnoth.put_unit(p.x, p.y, unit)
-            --print(i,' attack pos:',p.x,p.y)
-
-            -- As there might be several attackable units from a position, need to find all those
-            local targets = wesnoth.get_units {
-                { "filter_side",
-                    { { "enemy_of", { side = unit.side } } }
-                },
-                { "not", {
-                    { "filter_wml", {
-                        { "status", { petrified = "yes" } }  -- This is important!
-                    } }
-                } },
-                { "filter_location",
-                    { { "filter_adjacent_location", { x = p.x, y = p.y } } }
-                }
-            }
-            --print('  number targets: ',#targets)
-
-            local attack_hex_occupied = false
-            if unit_in_way then attack_hex_occupied = true end
-
-            for j,t in pairs(targets) do
-                local att_stats, def_stats = nil, nil
-                if cfg.simulate_combat then
-                    att_stats, def_stats = wesnoth.simulate_combat(unit, t)
-                end
-
-                table.insert(attacks, {
-                    dst = { x = p.x, y = p.y },
-                    src = { x = x1, y = y1 },
-                    target = { x = t.x, y = t.y },
-                    att_stats = att_stats,
-                    def_stats = def_stats,
-                    attack_hex_occupied = attack_hex_occupied
-                } )
-            end
-
-            -- Put unit(s) back
-            wesnoth.put_unit(x1, y1, unit)
-            if unit_in_way then wesnoth.put_unit(p.x, p.y, unit_in_way) end
+    local old_moves = {}
+    if (moves == "max") then
+        for i,u in ipairs(units) do
+            old_moves[i] = u.moves
+            u.moves = u.max_moves
         end
     end
 
-    return attacks
-end
+    -- Note: the remainder is optimized for speed, so we only get_units once,
+    -- do not use WML filters, etc.
+    local all_units = wesnoth.get_units {}
 
-function ai_helper.get_attacks(units, cfg)
-    -- Wrapper function for ai_helper.get_attacks_unit
-    -- Returns the same sort of table (and cfg has the same structure), but for the attacks of several units
+    local enemy_map, my_unit_map, other_unit_map = LS.create(), LS.create(), LS.create()
+    for i,u in ipairs(all_units) do
+        -- The value of all the location sets is the index of the
+        -- unit in the all_units array
+        if wesnoth.is_enemy(u.side, side) and (not u.status.petrified) then
+            enemy_map:insert(u.x, u.y, i)
+        end
 
-    local attacks = {}
-    for k,u in pairs(units) do
-        local attacks_unit = ai_helper.get_attacks_unit(u, cfg)
+        if (u.side == side) then
+            my_unit_map:insert(u.x, u.y, i)
+        else
+            other_unit_map:insert(u.x, u.y, i)
+        end
+    end
 
-        if attacks_unit[1] then
-            for i,a in ipairs(attacks_unit) do
-                table.insert(attacks, a)
+    local attack_hex_map = LS.create()
+    enemy_map:iter(function(e_x, e_y, i)
+        for x, y in H.adjacent_tiles(e_x, e_y) do
+            -- If there's no unit of another side on this hex, include it
+            -- as possible attack location (this includes hexes occupied
+            -- by own units at this time)
+            if (not other_unit_map:get(x, y)) then
+                local target_table = attack_hex_map:get(x, y) or {}
+                table.insert(target_table, { x = e_x, y = e_y, i = i })
+                attack_hex_map:insert(x, y, target_table)
             end
+        end
+    end)
+
+    -- So that we at most need to do find_reach() once per unit
+    -- It is needed for all units in 'units' and for testing whether
+    -- units can move out of the way
+    local reaches = LS.create()
+
+    for i_u,u in ipairs(units) do
+        local reach
+        if reaches:get(u.x, u.y) then
+            reach = reaches:get(u.x, u.y)
+        else
+            reach = wesnoth.find_reach(u)
+            reaches:insert(u.x, u.y, reach)
+        end
+
+        for i_r,r in ipairs(reach) do
+            if attack_hex_map:get(r[1], r[2]) then
+                local add_target = true
+                local attack_hex_occupied = false
+
+                -- If another unit of same side is on this hex:
+                if my_unit_map:get(r[1], r[2]) and ((r[1] ~= u.x) or (r[2] ~= u.y)) then
+                    attack_hex_occupied = true
+
+                    if (not cfg.include_occupied) then
+                        add_target = false
+                    else  -- test whether it can move out of the way
+                        local unit_in_way = all_units[my_unit_map:get(r[1], r[2])]
+                        local uiw_reach
+                        if reaches:get(unit_in_way.x, unit_in_way.y) then
+                            uiw_reach = reaches:get(unit_in_way.x, unit_in_way.y)
+                        else
+                            uiw_reach = wesnoth.find_reach(unit_in_way)
+                            reaches:insert(unit_in_way.x, unit_in_way.y, uiw_reach)
+                        end
+
+                        -- Units that cannot move away have only one hex in uiw_reach
+                        if (#uiw_reach <= 1) then add_target = false end
+                    end
+                end
+
+                if add_target then
+                    for i_t,target in ipairs(attack_hex_map:get(r[1], r[2])) do
+                        local att_stats, def_stats
+                        if cfg.simulate_combat then
+                            local unit_dst = wesnoth.copy_unit(u)
+                            unit_dst.x, unit_dst.y = r[1], r[2]
+
+                            local enemy = all_units[target.i]
+                            att_stats, def_stats = wesnoth.simulate_combat(unit_dst, enemy)
+                        end
+
+                        table.insert(attacks, {
+                            src = { x = u.x, y = u.y },
+                            dst = { x = r[1], y = r[2] },
+                            target = { x = target.x, y = target.y },
+                            att_stats = att_stats,
+                            def_stats = def_stats,
+                            attack_hex_occupied = attack_hex_occupied
+                        })
+                    end
+                end
+            end
+        end
+    end
+
+    if (moves == "max") then
+        for i,u in ipairs(units) do
+            u.moves = old_moves[i]
         end
     end
 
@@ -1240,7 +1234,7 @@ end
 function ai_helper.get_attack_combos(units, enemy, cfg)
     -- Calculate attack combination result by 'units' on 'enemy'
     -- All the unit/hex combinations are considered, but without specifying the order of the
-    -- attacks.  Use ai_helper.get_attack_combos_full() if order matters.
+    -- attacks. Use ai_helper.get_attack_combos_full() if order matters.
     -- cfg: A config table to be passed on to ai_helper.get_attacks
     -- Return values:
     --   1. Attack combinations in form { dst = src }
@@ -1308,7 +1302,6 @@ function ai_helper.get_attack_combos(units, enemy, cfg)
             end
         end
     end
-    --DBG.dbms(attacks_dst_src)
 
     -- Reset moves for all units
     for i,u in ipairs(units) do
@@ -1324,7 +1317,7 @@ function ai_helper.get_attack_combos(units, enemy, cfg)
     -- at this time, this includes all the 'no unit attacks this hex' elements
     -- which have a value of 0 for 'src'
     -- They need to be kept in this part, so that we get the combos that do not
-    -- use the maximum amount of units possible.  They will be eliminated below.
+    -- use the maximum amount of units possible. They will be eliminated below.
     local attack_array = {}
     -- For all values of 'dst'
     for dst,ads in pairs(attacks_dst_src) do
@@ -1359,7 +1352,6 @@ function ai_helper.get_attack_combos(units, enemy, cfg)
             end
         end
     end
-    --DBG.dbms(attack_array)
     --ai_helper.print_ts('#attack_array before:', #attack_array)
 
     -- Now eliminate all the 0s
@@ -1379,7 +1371,6 @@ function ai_helper.get_attack_combos(units, enemy, cfg)
     -- This last step eliminates the "empty attack combo" (the one with all zeros)
     table.remove(attack_array, i_empty)
     --ai_helper.print_ts('#attack_array after:', #attack_array)
-    --DBG.dbms(attack_array)
 
     return attack_array
 end
