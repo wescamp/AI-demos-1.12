@@ -2,2484 +2,235 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AI-demos-1.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-13 11:20-0400\n"
+"POT-Creation-Date: 2013-11-30 18:58+0100\n"
 "PO-Revision-Date: 2013-07-13 11:20-0400\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: racv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: racv\n"
 
 #. [campaign]: id=AI-demos
-#: AI-demos/_main.cfg:9
+#: AI-demos/_main.cfg:12
 msgid "AI Modification Demos"
 msgstr ""
 
 #. [campaign]: id=AI-demos
-#: AI-demos/_main.cfg:10
+#: AI-demos/_main.cfg:13
 msgid "AI-demos"
 msgstr ""
 
 #. [campaign]: id=AI-demos
-#: AI-demos/_main.cfg:20
+#: AI-demos/_main.cfg:23
 msgid ""
-"Do you ever feel like you want to change the default behavior of the Wesnoth "
-"AI, but don't know how to go about it?  Wonder no more, you have come to the "
-"right place.  Feisty little goblin Grnk will be your tour guide to the "
-"wonders of Wesnoth AI development.\n"
+"<u>AI Development and Demonstration Campaign</u>\n"
 "\n"
-"<span color='#808080'><small>Version {./version.txt}, 16 SP scenarios and "
-"several MP AIs, with more than 30 different AI behaviors\n"
+"Home of a number of AI development projects, most notably two MP AIs dubbed "
+"'Ron' and 'Fred' as well as several test and demo scenarios.  This is also "
+"where the Micro AIs were developed.  As those have now been moved into "
+"mainline, they are no longer part of this campaign.\n"
 "\n"
-"Some parts require Wesnoth 1.11.4 or later</small></span>"
-msgstr ""
-
-#. [about]
-#: AI-demos/_main.cfg:27
-msgid "Initial Campaign Design"
-msgstr ""
-
-#. [entry]
-#: AI-demos/_main.cfg:29
-msgid "mattsc"
+"Fred currently boasts a >98% win rate against the RCA AI, but only on the "
+"Freelands map playing Northerners as Side 1.  He also still has significant "
+"problems playing against human players, so any comments on how to improve "
+"the AI would me most welcome.\n"
+"\n"
+"<span color='#808080'><small>Version {./version.txt}\n"
+"This add-on requires the most recent Wesnoth development version (1.11.7).</"
+"small></span>"
 msgstr ""
 
 #. [about]
 #: AI-demos/_main.cfg:33
-msgid "Coding"
+msgid "Initial Campaign Design"
 msgstr ""
 
 #. [entry]
 #: AI-demos/_main.cfg:35
-msgid "Alarantalara, AI0867, mattsc"
+msgid "mattsc"
 msgstr ""
 
 #. [about]
 #: AI-demos/_main.cfg:39
-msgid "2012 Google Code-in Students' Micro AI development"
+msgid "Coding"
 msgstr ""
 
 #. [entry]
 #: AI-demos/_main.cfg:41
-msgid "Samuel Kim, Robert Spencer, Martin Bede, gh0st, vitiv"
+msgid "Alarantalara, AI0867, mattsc"
 msgstr ""
 
 #. [about]
 #: AI-demos/_main.cfg:45
-msgid "Code and strategy contributions"
+msgid "2012 Google Code-in Students' Micro AI development"
 msgstr ""
 
 #. [entry]
 #: AI-demos/_main.cfg:47
-msgid "nelson, Rigor and various others (see forum thread)"
+msgid "Samuel Kim, Robert Spencer, Martin Bede, gh0st, vitiv"
 msgstr ""
 
 #. [about]
 #: AI-demos/_main.cfg:51
-msgid "Home guard code"
+msgid "Code and strategy contributions"
 msgstr ""
 
 #. [entry]
 #: AI-demos/_main.cfg:53
-msgid "JaMiT"
+msgid "nelson, Rigor and various others (see forum thread)"
 msgstr ""
 
 #. [about]
 #: AI-demos/_main.cfg:57
-msgid "Stationed guardian and coward ideas"
+msgid "Home guard code"
 msgstr ""
 
 #. [entry]
 #: AI-demos/_main.cfg:59
-msgid "Simons Mith"
+msgid "JaMiT"
 msgstr ""
 
 #. [about]
 #: AI-demos/_main.cfg:63
+msgid "Stationed guardian and coward ideas"
+msgstr ""
+
+#. [entry]
+#: AI-demos/_main.cfg:65
+msgid "Simons Mith"
+msgstr ""
+
+#. [about]
+#: AI-demos/_main.cfg:69
 msgid ""
 "Patrol scenario map, Konrad move idea (from 'The Earth Gut'), and dbms debug "
 "function"
 msgstr ""
 
 #. [entry]
-#: AI-demos/_main.cfg:65
+#: AI-demos/_main.cfg:71
 msgid "Anonymissimus"
 msgstr ""
 
 #. [about]
-#: AI-demos/_main.cfg:69
+#: AI-demos/_main.cfg:75
 msgid "Goblin Jabb patrol code (from 'A Rough Life')"
 msgstr ""
 
 #. [entry]
-#: AI-demos/_main.cfg:71
+#: AI-demos/_main.cfg:77
 msgid "Elvish_Hunter"
 msgstr ""
 
 #. [about]
-#: AI-demos/_main.cfg:75
+#: AI-demos/_main.cfg:81
 msgid "Urudin retreat code (from 'Legend of Wesmere')"
 msgstr ""
 
 #. [entry]
-#: AI-demos/_main.cfg:77
+#: AI-demos/_main.cfg:83
 msgid "nephro and Elvish_Hunter"
 msgstr ""
 
 #. [about]
-#: AI-demos/_main.cfg:81
+#: AI-demos/_main.cfg:87
 msgid "Animal unit graphics and config files"
 msgstr ""
 
 #. [entry]
-#: AI-demos/_main.cfg:83
+#: AI-demos/_main.cfg:89
 msgid ""
 "Deer & Stag: Anna D. (dirtywhitellama);  Rabbit: cedric;  Other Animals: "
 "Different sources -- TBD: need to list those specifically !!!"
 msgstr ""
 
 #. [ai]: id=ron_recruit
-#: AI-demos/ais/ai_generic-recruit.cfg:7
-msgid "RCA + Ron's recruit"
+#: AI-demos/ais/ai_generic_recruit.cfg:7
+msgid "Multiplayer_AI^AI-demos: Default + Ron's recruit"
 msgstr ""
 
 #. [ai]: id=generic_rush
-#: AI-demos/ais/ai_generic-rush.cfg:7
-msgid "ExpAI Ron: Generic Rush (any map)"
+#: AI-demos/ais/ai_generic_rush.cfg:7
+msgid "Multiplayer_AI^AI-demos: Generic Rush AI (Ron)"
 msgstr ""
 
 #. [ai]: id=gruntsFLS1
-#: AI-demos/ais/ai_grunt-rush-Freelands-S1.cfg:7
-msgid "ExpAI Fred: Rush AI for Freelands Side 1"
+#: AI-demos/ais/ai_grunt_rush_Freelands_S1.cfg:7
+msgid "Multiplayer_AI^AI-demos: Freelands Rush AI (Fred - Side 1 only)"
 msgstr ""
 
 #. [ai]: id=default_ai_with_recruit_log
 #: AI-demos/ais/default_ai_with_recruit_log.cfg:7
-msgid "Multiplayer_AI^RCA AI with Recruit Log"
+msgid "Multiplayer_AI^AI-demos: RCA AI with Recruit Log"
 msgstr ""
 
 #. [ai]: id=extra_targeting
 #: AI-demos/ais/default_with_move.cfg:7
-msgid "Default AI with extra targets"
+msgid "Multiplayer_AI^AI-demos: Default + Extra Targets"
 msgstr ""
 
 #. [ai]: id=ml_ai
 #: AI-demos/ais/ml_ai.cfg:6
-msgid "Multiplayer_AI^ML Recruiter with RCA AI (Recommended)"
+msgid "Multiplayer_AI^AI-demos: ML Recruiter with RCA AI (Recommended)"
 msgstr ""
 
 #. [ai]: id=ml_ai_less_random
 #: AI-demos/ais/ml_ai_less_random.cfg:6
-msgid "Multiplayer_AI^ML Recruiter with RCA AI (Experimental--less variety)"
+msgid ""
+"Multiplayer_AI^AI-demos: ML Recruiter with RCA AI (Experimental--less "
+"variety)"
 msgstr ""
 
 #: AI-demos/ais/ml_ai_rush.cfg:7
-msgid "ML Recruiter with Ron AI (Experimental--Beta)"
-msgstr ""
-
-#. [scenario]: id=The_Elves_Besieged
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:5
-msgid "The Elves Besieged"
-msgstr ""
-
-#. [side]
-#. [side]: type=Spearman, id=Konrad
-#. [unit]: type=Spearman, id=Konrad
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:34
-#: AI-demos/micro_ais/scenarios/patrols.cfg:40
-#: AI-demos/micro_ais/scenarios/patrols.cfg:94
-msgid "Konrad"
-msgstr ""
-
-#. [side]: type=Elvish Champion, id=Galdrad
-#. [side]: type=Elvish Shyde, id=Chantal
-#. [side]: type=Spearman, id=Konrad
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:46
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:156
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:176
-msgid "Rebels"
-msgstr ""
-
-#. [unit]: id=Delfador, type=Elder Mage
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:49
-msgid "Delfador"
-msgstr ""
-
-#. [side]: type=Orcish Warlord, id=Urug-Telfar
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:90
-msgid "Urug-Telfar"
-msgstr ""
-
-#. [side]: id=Bad Orc, type=Orcish Ruler
-#. [side]: id=Vadak, type=Orcish Ruler
-#. [side]: id=Vanak, type=Orcish Ruler
-#. [side]: type=Orcish Warlord, id=Knafa-Tan
-#. [side]: type=Orcish Warlord, id=Maga-Knafa
-#. [side]: type=Orcish Warlord, id=Urug-Telfar
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:102
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:116
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:134
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:23
-#: AI-demos/scenarios/prune-cart.cfg:23 AI-demos/scenarios/test.cfg:73
-msgid "Orcs"
-msgstr ""
-
-#. [side]: type=Orcish Warlord, id=Knafa-Tan
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:109
-msgid "Knafa-Tan"
-msgstr ""
-
-#. [side]: type=Orcish Warlord, id=Maga-Knafa
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:127
-msgid "Maga-Knafa"
-msgstr ""
-
-#. [side]: type=Elvish Champion, id=Galdrad
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:146
-msgid "Galdrad"
-msgstr ""
-
-#. [side]: type=Elvish Shyde, id=Chantal
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:163
-msgid "Chantal"
-msgstr ""
-
-#. [message]: speaker=Konrad
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:213
-msgid ""
-"Master Delfador! Look, there are orcs coming from all directions! What shall "
-"we do?"
-msgstr ""
-
-#. [message]: speaker=Delfador
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:217
-msgid "There are too many to fight, far too many. We must escape!"
+msgid "Multiplayer_AI^AI-demos: ML Recruiter with Ron AI (Experimental--Beta)"
 msgstr ""
 
 #. [event]
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:220
+#: AI-demos/multiplayer/_initial.cfg:68
 msgid ""
-"This is a reenactment of scenario \"The Elves Besieged\" of the mainline "
-"campaign \"Heir to the Throne\", just that the AI is playing Konrad's side "
-"here.  The goal is to move Konrad to the signpost in the northwest, while "
-"keeping both Konrad and Delfador alive.  The same AI as in scenario "
-"\"Protect Unit"
+"You are entering CA debugging mode. Check out the AI Demos github wiki about "
+"information on how to use this mode, or how to deactivate it."
 msgstr ""
 
-#. [event]
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:226
-msgid "Move Konrad here"
+#. [set_menu_item]: id=m03_choose_ca
+#: AI-demos/multiplayer/_initial.cfg:115
+msgid "Choose Candidate Action"
 msgstr ""
 
-#. [message]: speaker=unit
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:242
-msgid "Very well, we have made it this far! But where do we go next?"
+#. [set_menu_item]: id=m04_highest_score_CA
+#: AI-demos/multiplayer/_initial.cfg:129
+msgid "Find highest scoring CA (and auto-select it)"
 msgstr ""
 
-#. [message]: speaker=Delfador
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:246
-msgid ""
-"In HttT, we would travel north now, and try to make it to the Isle of "
-"Alduin. But for this demo campaign, we'll call it good here."
+#. [set_menu_item]: id=m05_play_turn
+#: AI-demos/multiplayer/_initial.cfg:144
+msgid "Play an entire AI turn"
 msgstr ""
 
-#. [message]: speaker=unit
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:271
-msgid "I... I don’t think I can make it anymore."
-msgstr ""
-
-#. [message]: speaker=Delfador
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:275
-msgid "Prince... you must keep fighting! Nooooooo!"
-msgstr ""
-
-#. [message]: speaker=unit
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:279
-msgid "It is over. I am doomed..."
-msgstr ""
-
-#. [message]: speaker=unit
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:293
-msgid "I have... have failed in my duty to protect the prince! I am defeated."
-msgstr ""
-
-#. [message]: speaker=Konrad
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:297
-msgid "Don’t die, Delfador! Please, you have to stay alive!"
-msgstr ""
-
-#. [message]: speaker=unit
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:301
-msgid "Ugh!"
-msgstr ""
-
-#. [message]: speaker=Delfador
-#: AI-demos/micro_ais/scenarios/The_Elves_Besieged.cfg:312
-msgid ""
-"Oh, no! We have run out of time, they have arrived with reinforcements..."
-msgstr ""
-
-#: AI-demos/micro_ais/scenarios/animals.cfg:4
-msgid ""
-"<u>General</u>: These AI's are set up to simulate (to some extent) how these "
-"animals  behave in real life.  This includes that they are animals, meaning "
-"that they are not super smart.  As an example, the wolves generally hunt in "
-"a pack, but are easily distracted by prey coming into range.  They are also "
-"decent, but not great at cornering deer.  For the most part, this is "
-"intentional.\n"
-"\n"
-"<u>Bears, Spiders and Yetis</u> mostly just wander in their respective parts "
-"of the map.  They stay out of each other's way (and out of the way of the "
-"dogs), but do attack each other if cornered.  They attack the other, weaker "
-"animals (deer etc.) if those are within range.\n"
-"\n"
-"<u>Wolves</u> hunt in a pack.  They actively go after the closest deer (as "
-"long as it stays in the forest) and try to corner it (not always super "
-"successfully), but are easily distracted by other prey coming into range.  "
-"The wolves try to avoid getting into the range of bears, spiders, dogs and "
-"the yeti, except when they are going in for an attack.  If you let them move "
-"for long enough, they will also learn that it is not healthy to attack the "
-"tusklets.  When no deer is left, they wander randomly.  Note that, unlike "
-"the Wolves Multipack AI (used in a different scenario), this Wolves AI "
-"combines all wolves of the side in the same pack."
-msgstr ""
-
-#: AI-demos/micro_ais/scenarios/animals.cfg:12
-msgid ""
-"Each <u>Deer</u> wanders randomly on forest tiles, except when enemies get "
-"in its (the deer's) range, in which case it flees to the farthest point it "
-"can reach.\n"
-"\n"
-"<u>Tuskers</u> exhibit the same behavior as deer, except when an enemy is "
-"next to one of the tusklets.  This enemy will then experience the full wrath "
-"of an irate boar.\n"
-"\n"
-"<u>Tusklets</u> blindly follow the closest adult tusker, except when there "
-"is no tusker left, in which case they behave the same as deer.\n"
-"\n"
-"<u>Rabbits</u> also wander randomly, but in addition disappear into their "
-"holes (if any are within reach) when enemies are close.  They reappear out "
-"of their holes at the beginning of the turn, if it is safe.\n"
-"\n"
-"<u>Sheep dogs</u> try to keep their sheep safe.  This involves keeping them "
-"inside the area outlined by the path the dogs have worn into the meadow, "
-"positioning themselves in between the sheep and approaching enemies, and "
-"attacking the enemies if those get too close.  You might have to let the "
-"scenario play for quite some time before you get to see an interesting dog/"
-"wolf interaction.  If no active herding or protecting move is needed, the "
-"dogs go to a random location on the path.\n"
-"\n"
-"<u>Sheep</u> wander aimlessly except when a sheep dog is next to them, in "
-"which case they run away from the dog.  The dogs exploit this by positioning "
-"themselves on the outside of the sheep, if possible.  Sheep also run away "
-"from approaching enemies.  The sheep, dogs and forest creatures (deer, "
-"tuskers, rabbits) have learned that they are no threat to each other and "
-"leave each other alone, demonstrating the enormous self control of a well "
-"trained sheep dog."
-msgstr ""
-
-#. [event]
-#. [scenario]: id=animals
-#. [side]
-#: AI-demos/micro_ais/scenarios/animals.cfg:27
-#: AI-demos/micro_ais/scenarios/goto.cfg:132
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:57
-msgid "Animals"
-msgstr ""
-
-#. [side]: id=Rutburt, type=Outlaw
-#. [side]: type=General, id=leader2
-#. [side]: type=Lieutenant, id=leader5
-#. [side]: type=Lieutenant, id=leader6
-#: AI-demos/micro_ais/scenarios/animals.cfg:47
-#: AI-demos/micro_ais/scenarios/goto.cfg:40
-#: AI-demos/micro_ais/scenarios/goto.cfg:96
-#: AI-demos/micro_ais/scenarios/goto.cfg:115
-#: AI-demos/micro_ais/scenarios/wolves.cfg:26
-msgid "Humans"
-msgstr ""
-
-#. [side]
-#: AI-demos/micro_ais/scenarios/animals.cfg:61
-msgid "Forest Creatures"
-msgstr ""
-
-#. [side]
-#: AI-demos/micro_ais/scenarios/animals.cfg:76
-msgid "Bears"
-msgstr ""
-
-#. [side]
-#: AI-demos/micro_ais/scenarios/animals.cfg:91
-msgid "Spiders"
-msgstr ""
-
-#. [side]
-#: AI-demos/micro_ais/scenarios/animals.cfg:106
-msgid "Yetis"
-msgstr ""
-
-#. [event]
-#. [scenario]: id=wolves
-#. [side]
-#: AI-demos/micro_ais/scenarios/animals.cfg:121
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:60
-#: AI-demos/micro_ais/scenarios/wolves.cfg:5
-#: AI-demos/micro_ais/scenarios/wolves.cfg:40
-msgid "Wolves"
-msgstr ""
-
-#. [side]
-#. [unit_type]: id=Sheep, race=monster
-#: AI-demos/micro_ais/scenarios/animals.cfg:136 AI-demos/units/Sheep.cfg:5
-msgid "Sheep"
-msgstr ""
-
-#. [set_menu_item]: id=m01_end_animals
-#. [set_menu_item]: id=m01_end_swarm
-#. [set_menu_item]: id=m01_end_wolves
-#. [set_menu_item]: id=m04_end_animals
-#: AI-demos/micro_ais/scenarios/animals.cfg:214
-#: AI-demos/micro_ais/scenarios/goto.cfg:365
-#: AI-demos/micro_ais/scenarios/swarm.cfg:67
-#: AI-demos/micro_ais/scenarios/wolves.cfg:96
-msgid "End scenario"
-msgstr ""
-
-#. [command]
-#. [then]
-#: AI-demos/micro_ais/scenarios/animals.cfg:226
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:183
-#: AI-demos/micro_ais/scenarios/goto.cfg:377
-#: AI-demos/micro_ais/scenarios/recruiting.cfg:105
-#: AI-demos/micro_ais/scenarios/swarm.cfg:73
-#: AI-demos/micro_ais/scenarios/swarm.cfg:179
-#: AI-demos/micro_ais/scenarios/wolves.cfg:102
-#: AI-demos/micro_ais/scenarios/wolves.cfg:260
-msgid "Well, that was that."
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/animals.cfg:349
-msgid ""
-"This is a fun little scenario with a bunch of different animal AIs, mostly "
-"for watching only.  The animal AIs behave as follows:\n"
-"\n"
+#. [set_menu_item]: id=m06_reset_vars
+#: AI-demos/multiplayer/_initial.cfg:159
+msgid "Reset or display 'self.data' table"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/animals.cfg:356
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:97
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:136
-#: AI-demos/micro_ais/scenarios/wolves.cfg:199
-#: AI-demos/scenarios/prune-cart.cfg:201
-msgid "Question for the Player"
+#: AI-demos/multiplayer/_initial.cfg:165
+msgid "Choose the Action"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/animals.cfg:359
-msgid ""
-"It is possible to include a human-controlled Side 1, so that the action "
-"stops once every turn for looking around (or to mess with things in debug "
-"mode).\n"
-"\n"
-"Note that there is no end to this scenario.  For demonstration purposes, any "
-"unit that is killed is replaced by another unit of the same type at the "
-"beginning of the next turn.  In order to end the scenario, there's a right-"
-"click option - but that only works in human-controlled mode.  In AI-only "
-"mode, you have to press 'Esc' or reload a previous savefile.\n"
-"\n"
-"Also note: The Animal AIs are coded as Micro AIs.  A Micro AI can be added "
-"and adapted to the need of a scenario easily using only WML and the "
-"[micro_ai] tag.  Check out the <span color='#00A000'>Micro AI wiki page</"
-"span> at http://wiki.wesnoth.org/Micro_AIs for more information."
+#: AI-demos/multiplayer/_initial.cfg:166
+msgid "Do you want to reset the 'self.data' table or show its current content"
 msgstr ""
 
 #. [option]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/animals.cfg:366
-msgid "<span font='16'>I'll just watch the animals.</span>"
+#: AI-demos/multiplayer/_initial.cfg:168
+msgid "Reset 'self.data' table to beginning-of-turn state"
 msgstr ""
 
 #. [option]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/animals.cfg:379
-#: AI-demos/micro_ais/scenarios/wolves.cfg:222
-msgid "<span font='16'>I want to have control of Side 1.</span>"
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/animals.cfg:385
-msgid "Watch the animals do their things"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/animals.cfg:387
-#: AI-demos/micro_ais/scenarios/goto.cfg:407
-#: AI-demos/micro_ais/scenarios/swarm.cfg:154
-#: AI-demos/micro_ais/scenarios/wolves.cfg:234
-msgid "Use right-click option"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/animals.cfg:391
-#: AI-demos/micro_ais/scenarios/wolves.cfg:238
-msgid "Death of Rutburt"
-msgstr ""
-
-#. [note]
-#: AI-demos/micro_ais/scenarios/animals.cfg:395
-#: AI-demos/micro_ais/scenarios/goto.cfg:415
-#: AI-demos/micro_ais/scenarios/swarm.cfg:162
-#: AI-demos/micro_ais/scenarios/wolves.cfg:242
-msgid "Check out the right-click menu options for additional actions"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/animals.cfg:412
-msgid ""
-"Yowl!\n"
-"Translation: Those tuskers are mean!  We better stay away from them and "
-"their young."
-msgstr ""
-
-#. [scenario]: id=bottleneck-defense
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:5
-msgid "Bottleneck Defense"
-msgstr ""
-
-#. [side]: type=Orcish Leader, id=Big Bad Orc
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:38
-msgid "Big Bad Orc"
-msgstr ""
-
-#. [event]: (id=Big Bad Orc) profile profile}
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:85
-msgid "All right, chaps.  Those orcs need to be stopped."
-msgstr ""
-
-#. [event]: (id=Big Bad Orc) profile profile}
-#. [event]: id=Kraa profile profile}
-#. [event]: id=Vanak profile profile}
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:87
-#: AI-demos/micro_ais/scenarios/guardians.cfg:520
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:136
-msgid "They there!  We them get!"
-msgstr ""
-
-#. [event]: (id=Big Bad Orc) profile profile}
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:90
-msgid ""
-"We need to hold that pass for as long as we can.  Let's put our strongest "
-"fighters on the front line and bring injured units to the back for healing.  "
-"If we're careful enough, we might even win this battle.  I'll join you as "
-"soon as I'm done recruiting and do my share of the fighting.\n"
-"\n"
-"Note: The Bottleneck Defense AI is coded as a Micro AI.  A Micro AI can be "
-"added and adapted to the need of a scenario easily using only WML and the "
-"[micro_ai] tag.  Check out the <span color='#00A000'>Micro AI wiki page</"
-"span> at http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [message]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:99
-msgid ""
-"In this scenario, the AI playing the humans in the east is instructed to "
-"form a defensive line at the pass and hold off the orcs for as long as "
-"possible. Do you want to play the orc side or let the default (RCA) AI do "
-"that?"
-msgstr ""
-
-#. [option]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:101
-#: AI-demos/scenarios/prune-cart.cfg:205
-msgid "<span font='16'>I'll watch the two AI's fight it out.</span>"
-msgstr ""
-
-#. [option]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:104
-msgid "<span font='16'>I'll play the orcs.</span>"
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:115
-msgid "Take the pass"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:117
-msgid "Defeat all humans"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:121
-msgid "Death of Big Bad Orc"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:125
-msgid "Only one orc remains"
-msgstr ""
-
-#. [then]
-#: AI-demos/micro_ais/scenarios/bottleneck-defense.cfg:150
-msgid ""
-"I may have fallen, but we will continue to defend the pass to the last man!"
-msgstr ""
-
-#. [event]
-#. [scenario]: id=dragon
-#: AI-demos/micro_ais/scenarios/dragon.cfg:5
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:66
-msgid "Dragon"
-msgstr ""
-
-#. [side]
-#. [unit]: id=Rowck, type=Fire Dragon
-#: AI-demos/micro_ais/scenarios/dragon.cfg:20
-#: AI-demos/micro_ais/scenarios/dragon.cfg:55
-msgid "Rowck"
-msgstr ""
-
-#. [side]: type=Dread Bat, id=Dreadful Bat
-#: AI-demos/micro_ais/scenarios/dragon.cfg:33
-msgid "Dreadful Bat"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/dragon.cfg:48
-#: AI-demos/micro_ais/scenarios/guardians.cfg:84
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:368
-#: AI-demos/micro_ais/scenarios/patrols.cfg:156
-msgid "End Scenario"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/dragon.cfg:51
-msgid "Rowck's Home"
-msgstr ""
-
-#. [event]: (id=Dreadful Bat) profile profile}
-#: AI-demos/micro_ais/scenarios/dragon.cfg:84
-msgid "Be careful to stay out of the way of that dragon.  He's a mean one."
-msgstr ""
-
-#. [event]: (id=Dreadful Bat) profile profile}
-#: AI-demos/micro_ais/scenarios/dragon.cfg:87
-msgid ""
-"Hi there.  I am Rowck and here is what I do:\n"
-"When hungry, I move around part of the map in a random wander until I get "
-"into range of an enemy.  If enemies are within range, I attack and devour "
-"the weakest of them.  After that, I retreat to my rest location, where I "
-"stay for a certain number of turns or until fully healed.\n"
-"A few details (features, not bugs, but can be changed if desired):\n"
-"- If my way home is blocked on the return, the normal RCA AI takes over my "
-"behavior.\n"
-"- I will, however, attack any enemy occupying my rest hex, if I can get "
-"there.\n"
-"- A kill only makes me go home when I am the attacker, not as defender.\n"
-"- Occasionally I will not move at all while wandering (a dragon has to rest "
-"sometimes!)\n"
-"\n"
-"Note: The Hunter AI is coded as a Micro AI.  A Micro AI can be added and "
-"adapted to the need of a scenario easily using only WML and the [micro_ai] "
-"tag.  Check out the <span color='#00A000'>Micro AI wiki page</span> at "
-"http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/dragon.cfg:99
-msgid "Move the bats around to explore how Rowck reacts"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/dragon.cfg:101
-msgid "Defeat Rowck"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/dragon.cfg:105
-msgid "Move the lead bat to the signpost"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/dragon.cfg:109
-msgid "Death of the bat leader"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/dragon.cfg:142
-msgid "I'm out of here."
-msgstr ""
-
-#. [event]
-#. [scenario]: id=goto
-#: AI-demos/micro_ais/scenarios/goto.cfg:5
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:96
-msgid "Goto"
-msgstr ""
-
-#. [side]: id=Vaddan, type=Outlaw
-#: AI-demos/micro_ais/scenarios/goto.cfg:24
-msgid "Vaddan"
-msgstr ""
-
-#. [side]: type=Poacher, id=leader3
-#: AI-demos/micro_ais/scenarios/goto.cfg:59
-msgid "Woodsmen"
-msgstr ""
-
-#. [side]: type=Saurian Flanker, id=leader4
-#: AI-demos/micro_ais/scenarios/goto.cfg:77
-msgid "Saurians"
-msgstr ""
-
-#. [event]: id=guard1}, id=guard2}, (id,name=fort_commander,Aethubry)}
-#: AI-demos/micro_ais/scenarios/goto.cfg:181
-msgid "General Minry"
-msgstr ""
-
-#. [event]: id=guard1}, id=guard2}, (id,name=fort_commander,Aethubry)}
-#: AI-demos/micro_ais/scenarios/goto.cfg:182
-msgid "Lieutenant Gadoc"
-msgstr ""
-
-#. [event]: id=guard1}, id=guard2}, (id,name=fort_commander,Aethubry)}
-#: AI-demos/micro_ais/scenarios/goto.cfg:183
-msgid "Lieutenant Senvan"
-msgstr ""
-
-#. [event]: id=guard1}, id=guard2}, (id,name=fort_commander,Aethubry)}
-#: AI-demos/micro_ais/scenarios/goto.cfg:184
-msgid "Sergeant Aethubry"
-msgstr ""
-
-#. [set_menu_item]: id=m01_new_footpad
-#: AI-demos/micro_ais/scenarios/goto.cfg:325
-msgid "Place Side 1 Footpad"
-msgstr ""
-
-#. [set_menu_item]: id=m02_kill_unit
-#. [set_menu_item]: id=m05_kill_unit
-#. [set_menu_item]: id=m06_kill_unit
-#: AI-demos/micro_ais/scenarios/goto.cfg:336
-#: AI-demos/micro_ais/scenarios/swarm.cfg:114
-#: AI-demos/micro_ais/scenarios/wolves.cfg:154
-#: AI-demos/multiplayer/era.cfg:157 AI-demos/scenarios/test.cfg:119
-msgid "Kill Unit under Cursor"
-msgstr ""
-
-#. [set_menu_item]: id=m03_null_control
-#: AI-demos/micro_ais/scenarios/goto.cfg:349
-msgid "Turn off human control of Side 1"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/goto.cfg:396
-msgid ""
-"This scenario demonstrates a variety of different uses of the Goto Micro "
-"AI.  All AI sides are controlled by this MAI in one way or another (except "
-"for the saurians, which are run by the Lurkers Micro AI).  Messages will be "
-"displayed throughout the scenario to point out what the units are doing.\n"
-"\n"
-"The player controls Side 1.  There are right-click context menu options for "
-"adding Side 1 units to the map and for taking them off again.  This is "
-"useful mostly for testing how the Side 3 guardians react.\n"
-"\n"
-"Note: The Goto AI is coded as a Micro AI.  A Micro AI can be added and "
-"adapted to the need of a scenario easily using only WML and the [micro_ai] "
-"tag.  Check out the <span color='#00A000'>Micro AI wiki page</span> at "
-"http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/goto.cfg:405
-msgid "Watch the AI units do their things"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/goto.cfg:411
-msgid "Death of Vaddan"
-msgstr ""
-
-#. [message]: speaker=messenger1
-#: AI-demos/micro_ais/scenarios/goto.cfg:426
-msgid "The bridge is out. What do we do now?"
-msgstr ""
-
-#. [message]: speaker=messenger2
-#: AI-demos/micro_ais/scenarios/goto.cfg:430
-msgid "Looks like we need to take the long way around to get to General Minry."
-msgstr ""
-
-#. [message]: speaker=leader3
-#: AI-demos/micro_ais/scenarios/goto.cfg:439
-msgid ""
-"Chaps, ignore everybody except for that swindler Vaddan and his men. Stay in "
-"place until any of his units gets within 8 hexes of you.\n"
-"\n"
-"Note: This is a demonstration of how the Goto Micro AI can be used to code "
-"guardian units, although one of the dedicated Guardian Micro AIs will often "
-"be better suited for that purpose."
-msgstr ""
-
-#. [message]: type=Vampire Bat
-#: AI-demos/micro_ais/scenarios/goto.cfg:450
-msgid ""
-"Us four bats switch between running off to the corners of the map (each one "
-"to a different corner), and getting back in a group right here. Either "
-"behavior is set up with a single [micro_ai] tag, one with "
-"'unique_goals=yes', the other without."
-msgstr ""
-
-#. [message]: speaker=messenger2
-#: AI-demos/micro_ais/scenarios/goto.cfg:464
-msgid ""
-"I'll take the route straight through the mountains. It's much shorter than "
-"following the trail all the way around in the south."
-msgstr ""
-
-#. [message]: speaker=messenger1
-#: AI-demos/micro_ais/scenarios/goto.cfg:468
-msgid ""
-"You're crazy. It might be shorter as the crow flies, but it will take you "
-"forever to get through those mountains.\n"
-"\n"
-"Note: The messengers are controlled by Goto Micro AI definitions that differ "
-"by a single line, 'use_straight_line=yes/no'."
-msgstr ""
-
-#. [message]: speaker=unit
-#: AI-demos/micro_ais/scenarios/goto.cfg:508
-msgid "I told you so!"
-msgstr ""
-
-#. [message]: speaker=leader5
-#: AI-demos/micro_ais/scenarios/goto.cfg:518
-msgid ""
-"Men, head down to the River Fort and get your orders from Sergeant Aethubry. "
-"I want each and every one of you to report to him before going east to fight "
-"those saurians."
-msgstr ""
-
-#. [message]: speaker=leader6
-#: AI-demos/micro_ais/scenarios/goto.cfg:527
-msgid ""
-"Hah, that's that pencil pusher Gadoc for you! Men, I want you to move toward "
-"the River Fort as well, but it's good enough for one of you to report to "
-"Sergeant Aethubry. Once that has happened, the rest of you can head into "
-"battle directly."
-msgstr ""
-
-#. [message]: speaker=unit
-#: AI-demos/micro_ais/scenarios/goto.cfg:545
-msgid ""
-"$unit.type $unit.name from Lieutenant Gadoc's squadron reporting for duty, "
-"sir."
-msgstr ""
-
-#. [message]: speaker=fort_commander
-#: AI-demos/micro_ais/scenarios/goto.cfg:561
-msgid "Ready to fight those saurians, soldier?"
-msgstr ""
-
-#. [message]: speaker=unit
-#: AI-demos/micro_ais/scenarios/goto.cfg:565
-msgid "Yes, sir."
-msgstr ""
-
-#. [message]: speaker=fort_commander
-#: AI-demos/micro_ais/scenarios/goto.cfg:573
-msgid ""
-"Very good, $unit.type. Now go help your comrade get rid of that saurian "
-"infestation in the swamps."
-msgstr ""
-
-#. [message]: speaker=fort_commander
-#: AI-demos/micro_ais/scenarios/goto.cfg:581
-msgid "Maybe if I ignore them, they'll just go away?"
-msgstr ""
-
-#. [message]: speaker=unit
-#: AI-demos/micro_ais/scenarios/goto.cfg:600
-msgid "Lieutenant Senvan's men reporting for duty, sir."
-msgstr ""
-
-#. [message]: speaker=fort_commander
-#: AI-demos/micro_ais/scenarios/goto.cfg:604
-msgid ""
-"Ah, Lieutenant Senvan... Is every single one of you going to bother me "
-"individually as well?"
-msgstr ""
-
-#. [message]: speaker=unit
-#: AI-demos/micro_ais/scenarios/goto.cfg:608
-msgid ""
-"No, sir. Lieutenant Senvan ordered us to head into battle as soon as I have "
-"reported to you."
-msgstr ""
-
-#. [message]: speaker=fort_commander
-#: AI-demos/micro_ais/scenarios/goto.cfg:612
-msgid ""
-"Well, that's a relief. Somebody knows how to use his ... I mean, very well, "
-"off you go then.\n"
-"\n"
-msgstr ""
-
-#. [message]: speaker=fort_commander
-#: AI-demos/micro_ais/scenarios/goto.cfg:614
-msgid ""
-"I wouldn't say anything negative about one of my superior officers now, "
-"would I?"
-msgstr ""
-
-#. [message]: type=Vampire Bat
-#: AI-demos/micro_ais/scenarios/goto.cfg:652
-msgid "We've all made it to the corners, let's get back together again."
-msgstr ""
-
-#. [message]: type=Vampire Bat
-#: AI-demos/micro_ais/scenarios/goto.cfg:695
-msgid "We're back together, let's head out to the corners again."
-msgstr ""
-
-#. [event]
-#. [scenario]: id=guardians
-#: AI-demos/micro_ais/scenarios/guardians.cfg:17
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:69
-msgid "Guardians"
-msgstr ""
-
-#. [side]: id=Kraa, type=Gryphon
-#: AI-demos/micro_ais/scenarios/guardians.cfg:30
-msgid "Kraa"
-msgstr ""
-
-#. [side]: id=Kraa, type=Gryphon
-#: AI-demos/micro_ais/scenarios/guardians.cfg:36
-#: AI-demos/micro_ais/scenarios/swarm.cfg:26
-msgid "Gryphons"
-msgstr ""
-
-#. [side]: type=Orcish Leader, id=Another Bad Orc
-#: AI-demos/micro_ais/scenarios/guardians.cfg:48
-msgid "Another Bad Orc"
-msgstr ""
-
-#. [unit]: type=Dwarvish Guardsman, id=guardian1
-#: AI-demos/micro_ais/scenarios/guardians.cfg:95
-msgid "Guardian 1"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:99
-#: AI-demos/micro_ais/scenarios/guardians.cfg:110
-msgid "ai_special=guardian"
-msgstr ""
-
-#. [unit]: type=Dwarvish Guardsman, id=guardian2
-#: AI-demos/micro_ais/scenarios/guardians.cfg:106
-msgid "Guardian 2"
-msgstr ""
-
-#. [unit]: type=Giant Rat, id=coward1
-#: AI-demos/micro_ais/scenarios/guardians.cfg:119
-msgid "Coward 1"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:125
-msgid "coward r=5"
-msgstr ""
-
-#. [unit]: type=Giant Rat, id=coward2
-#: AI-demos/micro_ais/scenarios/guardians.cfg:142
-msgid "Coward 2"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:148
-msgid ""
-"coward r=5\n"
-"    s=24 5"
-msgstr ""
-
-#. [unit]: type=Giant Rat, id=coward3
-#: AI-demos/micro_ais/scenarios/guardians.cfg:167
-msgid "Coward 3"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:173
-msgid ""
-"   coward r=5\n"
-" s=24,5 a=24,15"
-msgstr ""
-
-#. [unit]: type=Giant Rat, id=coward4
-#: AI-demos/micro_ais/scenarios/guardians.cfg:193
-msgid "Coward 4"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:199
-msgid ""
-"coward r=5\n"
-"    s=32,--"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:214
-msgid "Move gryphons here to see different coward reactions"
-msgstr ""
-
-#. [unit]: type=Troll, id=return1
-#: AI-demos/micro_ais/scenarios/guardians.cfg:223
-msgid "Return Guardian 1"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:226
-msgid "return 20,2"
-msgstr ""
-
-#. [unit]: type=Troll Whelp, id=return2
-#: AI-demos/micro_ais/scenarios/guardians.cfg:243
-msgid "Return Guardian 2"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:246
-msgid "return 21,9"
-msgstr ""
-
-#. [unit]: type=Troll Whelp, id=home1
-#: AI-demos/micro_ais/scenarios/guardians.cfg:264
-msgid "Home Guard 1"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:267
-msgid "home 19,2"
-msgstr ""
-
-#. [unit]: type=Troll, id=home 2
-#: AI-demos/micro_ais/scenarios/guardians.cfg:276
-msgid "Home Guard 2"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:279
-msgid "home 21,10"
-msgstr ""
-
-#. [unit]: type=Skeleton Archer, id=stationed1
-#: AI-demos/micro_ais/scenarios/guardians.cfg:289
-msgid "Stationed Guardian 1"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:292
-msgid ""
-" stationed r=4\n"
-"s=2,14 g=3,13"
-msgstr ""
-
-#. [unit]: type=Skeleton, id=stationed2
-#: AI-demos/micro_ais/scenarios/guardians.cfg:312
-msgid "Stationed Guardian 2"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:315
-msgid ""
-" stationed r=4\n"
-"s=4,14 g=7,13"
-msgstr ""
-
-#. [unit]: type=Troll, id=zone1
-#: AI-demos/micro_ais/scenarios/guardians.cfg:336
-msgid "Gate Keeper"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:342
-#: AI-demos/micro_ais/scenarios/guardians.cfg:395
-msgid "Zone Guard"
-msgstr ""
-
-#. [unit]: type=Dwarvish Guardsman, id=zone2
-#: AI-demos/micro_ais/scenarios/guardians.cfg:362
-msgid "Home Keeper"
-msgstr ""
-
-#. [variables]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:368
-msgid ""
-"Zone Guard with\n"
-"separate attack Zone"
-msgstr ""
-
-#. [unit]: type=Naga Fighter, id=zone3
-#: AI-demos/micro_ais/scenarios/guardians.cfg:392
-msgid "Water Guardian"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:411
-msgid "Guarded Location"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:412
-msgid "Station 1"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:413
-msgid "Station 2"
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m01_guardian
-#: AI-demos/micro_ais/scenarios/guardians.cfg:431
-#: AI-demos/micro_ais/scenarios/guardians.cfg:437
-msgid "Standard WML Guardian"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:437
-msgid ""
-"This is the built-in WML guardian coded using 'ai_special=guardian'.  These "
-"guardians attack if there is an enemy within their movement range, otherwise "
-"they do nothing (except maybe retreating to a village for healing)."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m02_return
-#: AI-demos/micro_ais/scenarios/guardians.cfg:442
-#: AI-demos/micro_ais/scenarios/guardians.cfg:448
-msgid "Return Guardian"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:448
-msgid ""
-"A 'return guardian' is a variation of the standard Wesnoth guardian. It has "
-"an assigned guard position (GP) to which it returns after attacks on "
-"approaching enemies:\n"
-"- If at GP with no enemy in reach, do nothing.\n"
-"- If at GP with enemy in reach, leave attack to default AI (note that this "
-"may include not attacking if the enemy is deemed too strong).\n"
-"- If not at GP, return there, no matter whether an enemy is in reach or "
-"not.\n"
-"- If enemies are blocking your way back, do your best to get there anyway.\n"
-"- If you end up next to an enemy on the way back, attack after the move."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m03_home
-#: AI-demos/micro_ais/scenarios/guardians.cfg:458
-#: AI-demos/micro_ais/scenarios/guardians.cfg:464
-msgid "Home Guard"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:464
-msgid ""
-"A 'home guard' is a variant on the 'guardian' AI special. With this variant, "
-"the unit has an assigned 'home' location, and will return there if not "
-"involved in combat and if not going to a village, whether for healing or to "
-"capture it this turn. (By contrast, the standard guardian AI will cause the "
-"unit to stay where it last attacked.) This differs from 'return guardian' in "
-"that a home guard will press the attack, possibly getting drawn quite far "
-"from 'home', rather than returning after each attack.  (It can also be lured "
-"away by a string of closely-placed villages, but that is something a map "
-"builder can control.)\n"
-"This also demonstrates how to combine candidate actions from Formula AI and "
-"Lua AI in one side.  The home guard is written in Formula AI, while the "
-"return and stationed guardians and the cowards are written in Lua AI.  In "
-"addition the non-guardian units of the side follow the default AI behavior."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m04_stationed
-#: AI-demos/micro_ais/scenarios/guardians.cfg:470
-#: AI-demos/micro_ais/scenarios/guardians.cfg:476
-msgid "Stationed Guardian"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:476
-msgid ""
-"A 'stationed guardian' is another variation of the standard Wesnoth guardian "
-"with a somewhat more complex behavior than that of the 'return guardian'. "
-"Two positions are defined for it, a 'station' and a 'guarded location', as "
-"well as a 'distance'. The behavior is as follows:\n"
-"- If no enemy is within 'distance' of the guard's current position, do "
-"nothing.\n"
-"- Otherwise: If an enemy is within 'distance' of the guard, but not also "
-"within the same distance of the guarded location and the station (all of "
-"this simultaneously), move the guard in the direction of the station.\n"
-"- Otherwise:\n"
-"  - Pick the enemy unit that is closest to the guarded location.\n"
-"  - If we can reach it, pick the adjacent hex with the highest defense "
-"rating and attack from there.\n"
-"  - If not in reach, move toward this unit."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m05_coward
-#: AI-demos/micro_ais/scenarios/guardians.cfg:487
-#: AI-demos/micro_ais/scenarios/guardians.cfg:493
-msgid "Coward"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:493
-msgid ""
-"Cowards are units that, like guardians, sit around doing nothing until an "
-"enemy comes into range.  Unlike guardians, however, they run away once "
-"enemies approach. Applications might be wild animals, unarmed civilians "
-"getting in the way of a battle, etc.  The coward macro can be called with "
-"two optional locations, 'seek' and 'avoid':\n"
-"- If neither is given, the coward retreats to the position farthest away "
-"from the approaching enemies.\n"
-"- If 'seek' is given, it preferentially goes toward that location (but "
-"getting away from enemies takes priority).\n"
-"- If 'avoid' is given, it in addition tries to avoid that location (with "
-"both maximizing distance from enemies and going toward 'seek' taking "
-"priority).\n"
-"- Both 'seek' and 'avoid' may consist of only one coordinate ('x' or 'y'), "
-"in which case not a single hex, but a line of hexes is sought or avoided."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m06_zone
-#: AI-demos/micro_ais/scenarios/guardians.cfg:502
-#: AI-demos/micro_ais/scenarios/guardians.cfg:508
-msgid "Zone Guardian"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:508
-msgid ""
-"A zone guardian is a unit that, as the name says, guards a zone. It moves "
-"randomly inside this zone until an enemy enters it (or a separately defined "
-"enemy zone, see below). Applications might be the defense of a castle or a "
-"nesting area. The zone macro can be called with an optional enemy zone:\n"
-"- If not specified, the zone guard attacks any enemy coming inside its guard "
-"zone.\n"
-"- Otherwise, it attacks any enemy entering the enemy zone and once there are "
-"no more enemies, it goes back to patrol in its basic zone."
-msgstr ""
-
-#. [event]: id=Kraa profile profile}
-#: AI-demos/micro_ais/scenarios/guardians.cfg:519
-msgid "Kraahhh!!!!"
-msgstr ""
-
-#. [event]: id=Kraa profile profile}
-#: AI-demos/micro_ais/scenarios/guardians.cfg:522
-msgid ""
-"Gryphons of the High Plains, look at all these enemies.  They don't behave "
-"normally.  Most of them don't move at all unless we get close.  Let's check "
-"out how they react to us.\n"
-"\n"
-"Note to the player: the right-click context menu provides information about "
-"each of the units' behavior.\n"
-"\n"
-"Another note: Most of the Guardian AIs are coded as Micro AIs.  A Micro AI "
-"can be added and adapted to the need of a scenario easily using only WML and "
-"the [micro_ai] tag.  Check out the <span color='#00A000'>Micro AI wiki page</"
-"span> at http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:531
-msgid "Move the Gryphons around to explore how the guardians react"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/guardians.cfg:533
-#: AI-demos/micro_ais/scenarios/patrols.cfg:211
-msgid "Defeat all enemy units"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/guardians.cfg:537
-msgid "Move Kraa to the signpost"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/guardians.cfg:541
-msgid "Death of Kraa"
-msgstr ""
-
-#. [note]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:545
-msgid ""
-"Check out the right-click menu options for information on each guardian type"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/guardians.cfg:600
-msgid ""
-"Gryphons of the High Plains, it is time to return to said plains.  Follow me."
-msgstr ""
-
-#. [scenario]: id=healer_support
-#: AI-demos/micro_ais/scenarios/healer_support.cfg:5
-msgid "Healer Support"
-msgstr ""
-
-#. [side]: id=Rebels1, type=Elvish Ranger
-#: AI-demos/micro_ais/scenarios/healer_support.cfg:21
-msgid "Rebels 1"
-msgstr ""
-
-#. [side]: id=Rebels2, type=Elvish Marksman
-#: AI-demos/micro_ais/scenarios/healer_support.cfg:37
-msgid "Rebels 2"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/healer_support.cfg:83
-msgid ""
-"In this scenario, we demonstrate the use of the Healer Support Micro AI.  "
-"This AI configures the healers of a side to stay behind the battle lines and "
-"heal injured and/or threatened units rather than participate in the attacks "
-"under all circumstances.  It includes several configurable options (which "
-"are set differently for the two sides in this scenario) that determine how "
-"aggressive/careful the healers are, whether they also attack, how much risk "
-"they are willing to take, etc.\n"
-"\n"
-"For clarity, each healer announces her upcoming support move.  If you don't "
-"want to see that each time, just hit 'esc' when it happens the first time.\n"
-"\n"
-"Note: The Healer Support AI is coded as a Micro AI.  A Micro AI can be added "
-"and adapted to the need of a scenario easily using only WML and the "
-"[micro_ai] tag.  Check out the <span color='#00A000'>Micro AI wiki page</"
-"span> at http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/healer_support.cfg:99
-msgid "Argh!  They got us..."
-msgstr ""
-
-#. [scenario]: id=lurkers
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:172
-msgid "Lurkers of the Swamp"
-msgstr ""
-
-#. [side]: id=Pekzs, type=Saurian Soothsayer
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:191
-msgid "Pekzs"
-msgstr ""
-
-#. [side]: type=Saurian Oracle
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:207
-msgid "Micro AI Lurkers (saurians, stationary)"
-msgstr ""
-
-#. [side]: type=Saurian Oracle
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:224
-msgid "Micro AI Lurkers (saurians, wanderers)"
-msgstr ""
-
-#. [side]: type=Naga Warrior
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:241
-msgid "Micro AI Lurkers (nagas)"
-msgstr ""
-
-#. [side]: type=Saurian Oracle
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:258
-msgid "WML Lurkers (saurians)"
-msgstr ""
-
-#. [side]: type=Saurian Oracle
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:274
-msgid "Formula AI Lurkers (saurians)"
-msgstr ""
-
-#. [set_menu_item]: id=m01_menu_lurker2
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:373
-msgid "Place a Side 2 lurker"
-msgstr ""
-
-#. [set_menu_item]: id=m01_menu_lurker3
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:385
-msgid "Place a Side 3 lurker"
-msgstr ""
-
-#. [set_menu_item]: id=m01_menu_lurker4
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:397
-msgid "Place a Side 4 lurker"
-msgstr ""
-
-#. [set_menu_item]: id=m01_menu_lurker5
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:409
-msgid "Place a Side 5 lurker"
-msgstr ""
-
-#. [set_menu_item]: id=m01_menu_lurker6
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:421
-msgid "Place a Side 6 lurker"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:436
-msgid ""
-"In this scenario we demonstrate the Lurker Micro AI.  A lurker is a unit "
-"that is capable of moving across most terrains, but that only stops on and "
-"attacks from specific terrain.  It might also have the ability to hide on "
-"this terrain (which is the reason why this is called the Lurker AI).\n"
-"\n"
-"Lurkers move individually without any strategy and always attack the weakest "
-"enemy within their reach.  If no enemy is in reach, the lurker does a random "
-"move instead - or it just sits and waits (lurks)."
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:441
-msgid ""
-"Three different lurker behaviors are set up here using the [micro_ai] tag "
-"with different parameters:\n"
-"\n"
-"Side 2 (blue): saurians attacking only from swamp.  If no enemy is in range, "
-"they do not move.\n"
-"\n"
-"Side 3 (green): saurians attacking only from swamp.  If no enemy is in "
-"range, they wander randomly (on swamp only).\n"
-"\n"
-"Side 4 (purple): nagas wandering only on water terrain, but attacking from "
-"both water and swamp.\n"
-"\n"
-"We also added two other sides, which demonstrate lurker behavior coded in "
-"WML (Side 5, gray) and Formula AI (Side 6, brown)."
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:451
-msgid ""
-"You can use the right-click context menu to add additional lurkers.\n"
-"\n"
-"Any unit not adjacent to swamp (and water, for the nagas) is safe from the "
-"lurkers, thus it is easy to keep Pekzs from being attacked.\n"
-"\n"
-"The Lua Lurker AI is coded as a Micro AI.  A Micro AI can be added and "
-"adapted to the need of a scenario easily using only WML and the [micro_ai] "
-"tag.  Check out the <span color='#00A000'>Micro AI wiki page</span> at "
-"http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [event]
-#. [event]: id=Konrad profile profile}
-#. [event]: id=Vanak profile profile}
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:451
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:140
-#: AI-demos/micro_ais/scenarios/patrols.cfg:195
-msgid "Notes"
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:460
-msgid "Watch the lurkers move around and fight them if you want"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:462
-msgid "Defeat all lurkers"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:466
-msgid "Move Pekzs to the signpost"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:470
-msgid "Death of Pekzs"
-msgstr ""
-
-#. [note]
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:474
-msgid "Right-click on unoccupied swamp hexes to add more lurkers"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/lurkers.cfg:519
-msgid ""
-"Zzanksss for helping me wizz zzossse lurkerss.  Hope to sssee you again "
-"ssometime."
-msgstr ""
-
-#. [scenario]: id=messenger-escort
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:5
-msgid "Messenger Escort"
-msgstr ""
-
-#. [side]: id=Vanak, type=Orcish Ruler
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:17
-#: AI-demos/scenarios/test.cfg:29
-msgid "Vanak"
-msgstr ""
-
-#. [event]
-#. [side]
-#. [unit]: type=Dragoon, id=messenger
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:36
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:72
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:84
-msgid "Messenger"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:122
-msgid "Messanger Waypoint 1"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:124
-msgid "Messenger Waypoint 2"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:126
-msgid "Messenger Waypoint 3"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:129
-msgid "AI moves Messenger here"
-msgstr ""
-
-#. [event]: id=Vanak profile profile}
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:138
-msgid ""
-"Men, I need to get to that signpost in the north, to get the message to our "
-"leader.  Let's head up there as quickly as we can."
-msgstr ""
-
-#. [event]: id=Vanak profile profile}
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:140
-msgid ""
-"The Messenger Escort AI will try to move the dragoon messenger to the "
-"signpost in the north, while protecting him as well as possible with the "
-"other units.  Vanak's orcs need to stop him.\n"
-"\n"
-"Note that the messenger route is set up through a series of waypoints here "
-"simply to demonstrate how to use waypoints.  On this map, using only a "
-"single waypoint at the end of the route would work just as well (or probably "
-"even better).\n"
-"\n"
-"Also note that the messenger does not have to get exactly to each signpost "
-"(except for the last one), getting close is good enough.\n"
-"\n"
-"The Messenger Escort AI is coded as a Micro AI.  A Micro AI can be added and "
-"adapted to the need of a scenario easily using only WML and the [micro_ai] "
-"tag.  Check out the <span color='#00A000'>Micro AI wiki page</span> at "
-"http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:152
-msgid "Defeat the messenger"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:156
-msgid "Messenger gets to the signpost"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:160
-msgid "Death of Vanak"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:174
-msgid "I made it!  Now our people will be safe."
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/messenger-escort.cfg:186
-msgid "Nooo!  All is lost.  We will never stop the orcs now!"
-msgstr ""
-
-#. [event]
-#. [scenario]: id=patrols
-#: AI-demos/micro_ais/scenarios/patrols.cfg:5
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:87
-msgid "Patrols"
-msgstr ""
-
-#. [side]: id=Gertburt, type=Outlaw
-#: AI-demos/micro_ais/scenarios/patrols.cfg:18
-msgid "Gertburt"
-msgstr ""
-
-#. [side]: id=Gertburt, type=Outlaw
-#: AI-demos/micro_ais/scenarios/patrols.cfg:26
-msgid "Bandits"
-msgstr ""
-
-#. [side]
-#. [unit]: type=Orcish Slayer, id=Urudin
-#: AI-demos/micro_ais/scenarios/patrols.cfg:56
-#: AI-demos/micro_ais/scenarios/patrols.cfg:116
-msgid "Urudin"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:159
-msgid "Konrad Waypoint 1"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:161
-msgid "Konrad Waypoint 2"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:163
-msgid "Konrad Final Waypoint"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:166
-msgid "Patrol Waypoint 1"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:168
-msgid "Patrol Waypoint 2"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:170
-msgid "Patrol Waypoint 3"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:172
-msgid "Patrol Waypoint 4"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:175
-msgid "Urudin retreats here"
-msgstr ""
-
-#. [event]: id=Konrad profile profile}
-#: AI-demos/micro_ais/scenarios/patrols.cfg:183
-msgid ""
-"Hello!  I'm a Konrad impostor.  We are going to demonstrate the Patrol AI to "
-"you in this scenario.\n"
-"\n"
-"I am heading for the keep east of the central mountain via a couple "
-"waypoints in the south.  I will stay there once I get there. By contrast, "
-"those two fellas in the center are perpetually circling the mountain, one of "
-"them always in the same direction, the other changing directions after every "
-"lap.\n"
-"\n"
-"All of this is implemented by use of the same [micro_ai] tag."
-msgstr ""
-
-#. [event]: id=Konrad profile profile}
-#: AI-demos/micro_ais/scenarios/patrols.cfg:190
-msgid ""
-"And I am Urudin.  I will attack my enemies for a few turns, but will retreat "
-"toward the right edge of the map if my hitpoints are below half of maximum "
-"or by Turn 5, whatever happens first.\n"
-"\n"
-"This is an AI separate from the Patrols of Side 2."
-msgstr ""
-
-#. [event]: id=Konrad profile profile}
-#: AI-demos/micro_ais/scenarios/patrols.cfg:195
-msgid ""
-"You, as the player, are in charge of Gertburt's bandits in this scenario.  "
-"You can either simply watch the patrols move around, or you can move units "
-"into their way.  The three patrol units are all instructed to behave "
-"differently when facing enemy units:\n"
-"\n"
-"Konrad only attacks Gertburt, or any enemy unit that blocks his final "
-"waypoint.\n"
-"\n"
-"The Swordsman never attacks at all.\n"
-"\n"
-"The Longbowman attacks any enemy unit he ends up next to at the end of his "
-"move.\n"
-"\n"
-"They all have in common, however, that getting to their next waypoint takes "
-"priority over attacking.  They will thus prefer to move around enemies "
-"rather than straight for them.  Also, if a waypoint is occupied by a unit "
-"they are not instructed to attack, they will (eventually) abandon that "
-"waypoint once they get close enough and move on to the next one.\n"
-"\n"
-"The Patrol AI controlling all Side 2 units is coded as a Micro AI.  A Micro "
-"AI can be added and adapted to the need of a scenario easily using only WML "
-"and the [micro_ai] tag.  Check out the <span color='#00A000'>Micro AI wiki "
-"page</span> at http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:209
-msgid "Watch the patrols, attack them etc."
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/patrols.cfg:215
-msgid "Move Gertburt to the signpost"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/patrols.cfg:219
-msgid "Death of Gertburt"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:234
-msgid ""
-"Well, that was fun!  I'll just hang out here now and watch those two guys "
-"walk and walk and ..."
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/patrols.cfg:275
-msgid "Let's go home, chaps."
-msgstr ""
-
-#. [event]
-#. [scenario]: id=protect-unit
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:5
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:75
-msgid "Protect Unit"
-msgstr ""
-
-#. [side]: id=Langzhar, type=Lieutenant
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:17
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:23
-#: AI-demos/micro_ais/scenarios/recruiting.cfg:17
-#: AI-demos/micro_ais/scenarios/recruiting.cfg:23
-msgid "Langzhar"
-msgstr ""
-
-#. [side]: id=Koorzhar, type=Lieutenant
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:34
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:40
-#: AI-demos/micro_ais/scenarios/recruiting.cfg:34
-#: AI-demos/micro_ais/scenarios/recruiting.cfg:40
-msgid "Koorzhar"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:121
-msgid "Move Rossauba here"
-msgstr ""
-
-#. [event]: id=Koorzhar profile profile}
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:128
-msgid "There's that traitor wizard.  Let's get him."
-msgstr ""
-
-#. [event]: id=Koorzhar profile profile}
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:130
-msgid ""
-"Men, you know the deal.  We must protect Rossauba under all circumstances.  "
-"Even my survival is not as important."
-msgstr ""
-
-#. [event]: id=Koorzhar profile profile}
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:131
-msgid "That's very kind of you, but ..."
-msgstr ""
-
-#. [event]: id=Koorzhar profile profile}
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:132
-msgid ""
-"No buts!  You stay behind the lines and do not engage in battle unless there "
-"is no risk to your life, is that understood?  And get to that signpost in "
-"the northwest if it is safe."
-msgstr ""
-
-#. [message]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:139
-msgid ""
-"In this scenario, the AI playing the humans in the east (Langzhar) is "
-"instructed to protect the wizard Rossauba, while moving him safely to the "
-"signpost. On the other side, Koorzhar's units (in the west) will primarily "
-"attack Rossauba, even if a better target is available. Do you want to play "
-"either of the sides or let the AI's battle it out among themselves?\n"
-"\n"
-"Note: The Protect Unit AI is coded as a Micro AI. A Micro AI can be added "
-"and adapted to the need of a scenario easily using only WML and the "
-"[micro_ai] tag. Check out the <span color='#00A000'>Micro AI wiki page</"
-"span> at http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [option]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:144
-msgid "<span font='16'>I'll watch the two AI's fight it out</span>"
-msgstr ""
-
-#. [option]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:147
-msgid ""
-"<span font='16'>I'll play Langzhar's side (to see how Koorzhar's units "
-"target Rossauba)</span>"
-msgstr ""
-
-#. [option]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:156
-msgid ""
-"<span font='16'>I'll play Koorzhar's side (to see how Langzhar's units "
-"protect Rossauba)</span>"
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:168
-msgid "Protect Rossauba while moving him to the signpost"
-msgstr ""
-
-#. [objective]: condition=lose
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:170
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:190
-msgid "Rossauba makes it to the signpost"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:174
-msgid "Death of Rossauba"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:178
-msgid "Death of Langzhar"
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:184
-msgid "Get rid of that traitor wizard Rossauba"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:186
-msgid "Defeat Rossauba"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:194
-msgid "Death of Koorzhar"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:217
-msgid "I held out for as long as I could."
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/protect-unit.cfg:231
-msgid "I made it"
-msgstr ""
-
-#. [event]
-#. [scenario]: id=recruiting
-#: AI-demos/micro_ais/scenarios/recruiting.cfg:5
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:90
-msgid "Recruiting"
-msgstr ""
-
-#. [event]: id=Koorzhar profile profile}
-#: AI-demos/micro_ais/scenarios/recruiting.cfg:79
-msgid ""
-"This is a very simple scenario that can be used to test out different "
-"recruiting patterns."
-msgstr ""
-
-#. [event]: id=Koorzhar profile profile}
-#: AI-demos/micro_ais/scenarios/recruiting.cfg:82
-msgid ""
-"Just watch the recruiting of both sides and see if it is what you would "
-"expect.  The recruitment lists cover level 0 to level 2 units, in order to "
-"make differences more obvious."
-msgstr ""
-
-#. [event]: id=Koorzhar profile profile}
-#: AI-demos/micro_ais/scenarios/recruiting.cfg:84
-msgid ""
-"If you have not changed anything, Side 1 uses the Random Recruiting AI, with "
-"swordsmen and peasants having been given higher probability than the other "
-"units.  This is not meant as a good recruitment pattern, it simply serves as "
-"a demonstration how to use the AI.\n"
-"\n"
-"Side 2 uses Wesnoth' default recruiting.\n"
-"\n"
-"Also note that several Recruiting AIs are available as Micro AIs.  A Micro "
-"AI can be added and adapted to the need of a scenario easily using only WML "
-"and the [micro_ai] tag.  Check out the <span color='#00A000'>Micro AI wiki "
-"page</span> at http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [scenario]: id=micro_ai_test
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:5
-msgid "Micro AI Tests"
-msgstr ""
-
-#. [part]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:17
-msgid ""
-"<span font='16'>Hi, I'm Grnk the Frail. You may remember me from such "
-"instructional campaigns as \"Grnk the Mighty\" and \"Why You Shouldn't "
-"Attack Peasants When There's A Mad Goblin Around."
-msgstr ""
-
-#. [side]: id=Grnk, type=Goblin Spearman
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:31
-msgid "Grnk the Frail"
-msgstr ""
-
-#. [side]: id=Grnk, type=Goblin Spearman
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:39
-msgid "Grnk"
-msgstr ""
-
-#. [event]
-#. [scenario]: id=swarm
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:63
-#: AI-demos/micro_ais/scenarios/swarm.cfg:5
-msgid "Swarm"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:72
-msgid "Lurkers"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:78
-msgid "HttT: The Elves Besieged"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:81
-msgid "Bottleneck"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:93
-msgid "Healers"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:99
-msgid "<span color='#D0D0D0'>Prune Cart</span>"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:102
-msgid "<span color='#D0D0D0'>MP rushes</span>"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:105
-msgid "<span color='#D0D0D0'>Test Scenario</span>"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:108
-msgid "<span color='#D0D0D0'>Liberty Raid</span>"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:111
-msgid "<span color='#D0D0D0'>Simple Lua AI Demo</span>"
-msgstr ""
-
-#. [set_menu_item]: id=m01_menu_bottleneck_defense
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:121
-msgid "Bottleneck Defense Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:130
-msgid ""
-"In the Bottleneck Defense Micro AI scenario, a small group of human soldiers "
-"is instructed to hold a pass against a large horde of orcs.  You can either "
-"watch them fight it out against the standard RCA AI or take over the orc "
-"side."
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:130
-msgid "Bottleneck Defense Micro AI Demo"
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m02_swamp_lurkers
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:136
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:145
-msgid "Swamp Lurker Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:145
-msgid ""
-"Swamp lurkers are dumb, impulse-driven creatures which can move across most "
-"terrain, but only stop on swamp.  They move individually without any "
-"strategy and always attack the weakest enemy within their reach.  If no "
-"enemy is in reach, the lurker does a random move instead."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m03_guardians
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:151
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:160
-msgid "Guardian Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:160
-msgid ""
-"In 'Guardians', several variations of the standard Wesnoth guardian are "
-"shown, including a \"coward\" unit that runs away from any approaching unit "
-"(an \"inverse guardian\", in a way)."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m04_patrol
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:166
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:175
-msgid "Patrol Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:175
-msgid "'Patrols' contains AI modifications for units following patrol routes."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m05_recruiting
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:181
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:190
-msgid "Recruiting Tests Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:190
-msgid ""
-"A simple scenario set up for the sole purpose of testing different "
-"recruiting patterns."
-msgstr ""
-
-#. [set_menu_item]: id=m06_protect
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:196
-msgid "Protect Unit Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:205
-msgid ""
-"This scenario demonstrates one side protecting a wizard while moving him to "
-"a goal location.  At the same time, the other side is modified to do "
-"priority attacks on the wizard, even if a better target (by the default AI "
-"criteria) is available.  You can watch the two AIs fight it out, or take "
-"control of either side to explore how the opposing AI behaves."
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:205
-msgid "Protect Unit Micro AI Demo"
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m06a_protect
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:211
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:220
-msgid "HttT: The Elves Besieged Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:220
-msgid ""
-"This is a reenactment of scenario \"The Elves Besieged\" of the mainline "
-"campaign \"Heir to the Throne\", just that the AI is playing Konrad's side "
-"here.  The same algorithm as for scenario \"Protect Unit\" is used."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m07_messenger
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:226
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:235
-msgid "Messenger Escort Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:235
-msgid ""
-"'Messenger Escort' has the AI actively protect a messenger while he makes "
-"his way to the edge of the map.  The escort will also try to open the path "
-"for the messenger if there are enemies in the way."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m08_animals
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:241
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:250
-msgid "Animals Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:250
-msgid ""
-"This scenario demonstrates a number of different animals following "
-"customized AI behavior, including wolves hunting deer in packs; dogs herding "
-"sheep; bears, spiders, yetis, boar and rabbits wandering and hunting/"
-"avoiding each other."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m09_wolves
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:256
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:265
-msgid "Wolves Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:265
-msgid ""
-"Another demonstration of wolves wandering and attacking in packs, with a "
-"different behavior from that in 'Animals'."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m10_swarm
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:271
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:280
-msgid "Swarm Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:280
-msgid "This scenario features bats moving around semi-randomly in a swarm."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m11_dragon
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:286
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:295
-msgid "Dragon Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:295
-msgid ""
-"This scenario features a fire dragon displaying a hunt-and-rest behavior."
-msgstr ""
-
-#. [set_menu_item]: id=m12_healer_support
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:301
-msgid "Healer support Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:310
-msgid "Healer Support Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:310
-msgid ""
-"This scenario contains a simple demonstration of setting up the Healer "
-"Support Micro AI, which uses the healers of a side to back up injured or "
-"threatened units rather than having them participate in combat under all "
-"circumstances."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m13_goto
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:316
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:325
-msgid "Goto Micro AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:325
-msgid ""
-"This scenario contains several example usages of the Goto Micro AI, which is "
-"a highly configurable method of sending a unit (or units) to a location or "
-"set of locations. The units to be moved are defined using a Standard Unit "
-"Filter, while the goto locations are given in a Standard Location Filter."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m80_Lua_demo
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:331
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:340
-msgid "Simple Lua AI Demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:340
-msgid ""
-"This scenario provides a simple template for setting up a Lua AI engine and "
-"scenario.  The AI behavior itself is trivial and not particularly useful "
-"(some of the AI units simply move toward two map locations, with priority "
-"either higher or lower than attacks on enemies), it is only meant as a "
-"demonstration how to code this."
-msgstr ""
-
-#. [set_menu_item]: id=m90_cart
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:346
-msgid "Prune Cart AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:355
-msgid "Prune Cart AI Demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:355
-msgid ""
-"This scenario features an orcish horde protecting a cart with magical prunes "
-"from an undead army, while the cart (slowly) makes its way through a "
-"mountainous area."
-msgstr ""
-
-#. [set_menu_item]: id=m91_rushes
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:361
-msgid "MP Rush AIs (Lua AI)"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:370
-msgid "Story only scenario that explains how to use the multiplayer rush AIs."
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:370
-msgid "MP rush AIs"
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m92_test
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:376
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:385
-msgid "Lua AI Test Scenario"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:385
-msgid ""
-"This is a hard-core test scenario that is here for manual testing of AI "
-"functions or candidate actions.  It provides a right-click menu option for "
-"doing so without having to reload.\n"
-"\n"
-"It can also be start from the commandline as a test scenario with 'Wesnoth -"
-"d -t aid_test'."
-msgstr ""
-
-#. [command]
-#. [set_menu_item]: id=m93_test
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:393
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:402
-msgid "Liberty - The Raid"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:402
-msgid ""
-"Test scenario for replacing the wolf rider side in mainline scenario Liberty "
-"- The Raid by the Messenger Escort Micro AI."
-msgstr ""
-
-#. [set_menu_item]: id=m94_fai
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:408
-msgid "Formula AI demo"
-msgstr ""
-
-#. [command]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:417
-msgid ""
-"This scenario contains a simple demonstration of setting up a full AI using "
-"Formula AI."
-msgstr ""
-
-#. [command]
-#. [scenario]: id=fai-demo
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:417
-#: AI-demos/scenarios/fai-demo.cfg:5
-msgid "Formula AI Demo"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:427
-msgid ""
-"Move me to any of the signposts to go to an AI demonstration.  Brown "
-"signpost with blue labels are Micro AIs from mainline (see <span "
-"color='#00A000'>http://wiki.wesnoth.org/Micro_AIs</span> on the Wesnoth "
-"wiki).  Gray signposts with white labels designate AIs under development "
-"that are only available in this add-on.\n"
-"\n"
-"Information about each demonstration can be accessed by right-clicking on "
-"the respective signpost.\n"
-"\n"
-"<span color='#A00000'>Note:</span> As this add-on keeps up with the current "
-"AI development, some of the (brown signpost) AIs require the trunk version "
-"of Wesnoth in order to work (as opposed to the last development release).  "
-"If you encounter a problem with a scenario, start it as a test scenario from "
-"the command line instead, which uses the AI version appropriate for your "
-"Wesnoth version.  See the link above for instructions how to do that."
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:435
-msgid "Move Grnk to one of the signposts"
-msgstr ""
-
-#. [note]
-#: AI-demos/micro_ais/scenarios/scenario-micro_ai.cfg:439
-msgid "Right-click on a signpost to get information about the scenario"
-msgstr ""
-
-#. [side]
-#: AI-demos/micro_ais/scenarios/swarm.cfg:40
-msgid "Bats"
-msgstr ""
-
-#. [set_menu_item]: id=m02_new_gryphon
-#: AI-demos/micro_ais/scenarios/swarm.cfg:92
-msgid "Place Side 1 Gryphon"
-msgstr ""
-
-#. [set_menu_item]: id=m03_new_bat
-#: AI-demos/micro_ais/scenarios/swarm.cfg:103
-msgid "Place Side 2 Bat"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/swarm.cfg:139
-msgid ""
-"This scenario features bats moving around in a swarm.  Without adjacent "
-"enemies, they simply try to stay together and at a certain distance from "
-"enemies.  However, if an enemy unit is close to any bat, the swarm "
-"scatters.  This is particular fun to watch when one places an enemy unit in "
-"the middle of the swarm.  After being scattered, the swarm members slowly "
-"rejoin, but not in a very organized way.  Sub-swarms or individual bats "
-"might roam around for quite some time before they find their way back.  It "
-"is also possible that individual bats (or small groups) split off from the "
-"larger swarm at times.\n"
-"\n"
-"The player controls a side of gryphons, each of which is given 99 moves so "
-"that the reaction of the swarm to enemies can be tested easily.  There are "
-"also several right-click options, for example for adding bats or gryphons or "
-"for taking units off the map.\n"
-"\n"
-"Note: The Swarm AI is coded as a Micro AI.  A Micro AI can be added and "
-"adapted to the need of a scenario easily using only WML and the [micro_ai] "
-"tag.  Check out the <span color='#00A000'>Micro AI wiki page</span> at "
-"http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/swarm.cfg:148
-msgid "Watch the bats move around and fight them if you want"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/swarm.cfg:150
-msgid "Defeat all bats"
-msgstr ""
-
-#. [objective]: condition=lose
-#: AI-demos/micro_ais/scenarios/swarm.cfg:158
-msgid "Death of all gryphons"
-msgstr ""
-
-#. [side]
-#: AI-demos/micro_ais/scenarios/wolves.cfg:55
-msgid "More Wolves"
-msgstr ""
-
-#. [set_menu_item]: id=m02_new_peasant
-#: AI-demos/micro_ais/scenarios/wolves.cfg:121
-msgid "Place Side 1 Peasant"
-msgstr ""
-
-#. [set_menu_item]: id=m03_new_wolf2
-#: AI-demos/micro_ais/scenarios/wolves.cfg:132
-msgid "Place Side 2 Wolf"
-msgstr ""
-
-#. [set_menu_item]: id=m04_new_wolf3
-#: AI-demos/micro_ais/scenarios/wolves.cfg:143
-msgid "Place Side 3 Wolf"
-msgstr ""
-
-#. [event]
-#: AI-demos/micro_ais/scenarios/wolves.cfg:191
-msgid ""
-"This scenario features a different kind of wolf behavior from 'Animals'.  "
-"First, there can be an arbitrary number of wolf packs and the pack size on "
-"each side is a free parameter (set to 3 for Side 2 and 4 for Side 3 in this "
-"scenario).  At the beginning of the scenario, close wolves are grouped into "
-"packs in a semi-methodical way.  Wolves of the same pack begin by joining "
-"each other on the map.  After that, they stay together until only one wolf "
-"is left, which then tries to join up with an incomplete pack or with other "
-"single wolves.  Individual wolves entering the map during the scenario "
-"behave in that way as well.\n"
-"\n"
-"Second, wolves do not actively hunt here.  For the most part they just "
-"wander (often long distance).  However, the pack ferociously (and without "
-"regard for its own health) attacks any enemy units that come into range, as "
-"long as that does not mean separating the pack by more than a few hexes.  "
-"Staying together, or joining with a new wolf assigned to the pack, is the "
-"only thing that takes priority over satisfying the wolves' thirst for "
-"blood.\n"
-"\n"
-"To emphasize which wolf belongs to which pack, the pack number will be "
-"displayed below each wolf in this scenario once the AI takes control of a "
-"side the first time."
-msgstr ""
-
-#. [message]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/wolves.cfg:202
-msgid ""
-"It is possible to include a human-controlled Side 1, so that the action "
-"stops once every turn for looking around (or for messing with things in "
-"debug mode). In human-controlled mode, several options are available through "
-"the right-click menu, such as adding additional wolves to either side, "
-"taking wolves off the map, adding peasants to the human-controlled side or "
-"ending the scenario. This enables easy exploring of the wolf AI behavior "
-"under different circumstances.\n"
-"\n"
-"Note that the leader of the human-controlled side, Rutburt, can move 99 "
-"hexes per turn, so that it is always possible to keep him out of harm's "
-"way.\n"
-"\n"
-"Also note that the wolves AI is coded as a Micro AI. A Micro AI can be added "
-"and adapted to the need of a scenario easily using only WML and the "
-"[micro_ai] tag. Check out the <span color='#00A000'>Micro AI wiki page</"
-"span> at http://wiki.wesnoth.org/Micro_AIs for more information."
-msgstr ""
-
-#. [option]: speaker=narrator
-#: AI-demos/micro_ais/scenarios/wolves.cfg:209
-msgid "<span font='16'>I'll just watch the two wolf sides.</span>"
-msgstr ""
-
-#. [objectives]
-#: AI-demos/micro_ais/scenarios/wolves.cfg:228
-msgid "Watch the wolves move around and fight each other"
-msgstr ""
-
-#. [objective]: condition=win
-#: AI-demos/micro_ais/scenarios/wolves.cfg:230
-msgid "No wolves left on one side"
+#: AI-demos/multiplayer/_initial.cfg:176
+msgid "Show content of 'self.data' table"
 msgstr ""
 
 #. [era]: id=AI_Demos
@@ -2487,122 +238,84 @@ msgstr ""
 msgid "Default+Experimental AI"
 msgstr ""
 
-#. [event]
-#: AI-demos/multiplayer/era.cfg:77
-msgid ""
-"You are entering CA debugging mode.  Check out the AI Demos github wiki "
-"about information on how to use this mode, or how to deactivate it (and why "
-"the game needs to play through a turn first every time you use this mode)."
+#. [modification]: id=AI_Demos
+#: AI-demos/multiplayer/modification.cfg:5
+msgid "Experimental AI"
 msgstr ""
 
-#. [set_menu_item]: id=m03_choose_ca
-#: AI-demos/multiplayer/era.cfg:124
-msgid "Choose Candidate Action"
+#. [modification]: id=AI_Demos
+#: AI-demos/multiplayer/modification.cfg:6
+msgid "Some experimental AIs"
 msgstr ""
 
-#. [set_menu_item]: id=m04_highest_score_CA
-#: AI-demos/multiplayer/era.cfg:135
-msgid "Find highest scoring CA (and auto-select it)"
-msgstr ""
-
-#. [set_menu_item]: id=m05_play_turn
-#: AI-demos/multiplayer/era.cfg:146
-msgid "Play an entire AI turn"
-msgstr ""
-
-#. [set_menu_item]: id=m07_reset_vars
-#: AI-demos/multiplayer/era.cfg:168
-msgid "Reset or display 'self.data' table"
-msgstr ""
-
-#. [message]: speaker=narrator
-#: AI-demos/multiplayer/era.cfg:174
-msgid "Choose the Action"
-msgstr ""
-
-#. [message]: speaker=narrator
-#: AI-demos/multiplayer/era.cfg:175
-msgid "Do you want to reset the 'self.data' table or show its current content"
-msgstr ""
-
-#. [option]: speaker=narrator
-#: AI-demos/multiplayer/era.cfg:177
-msgid "Reset 'self.data' table to beginning-of-turn state"
-msgstr ""
-
-#. [option]: speaker=narrator
-#: AI-demos/multiplayer/era.cfg:185
-msgid "Show content of 'self.data' table"
+#. [command]
+#. [scenario]: id=fai_demo
+#: AI-demos/scenarios/fai_demo.cfg:5 AI-demos/scenarios/switchboard.cfg:157
+msgid "Formula AI Demo"
 msgstr ""
 
 #. [side]: type=Elvish Avenger, id=elf1
-#: AI-demos/scenarios/fai-demo.cfg:22
+#: AI-demos/scenarios/fai_demo.cfg:22
 msgid "Formula AI"
 msgstr ""
 
 #. [side]: type=Orcish Warrior
-#: AI-demos/scenarios/fai-demo.cfg:81
+#: AI-demos/scenarios/fai_demo.cfg:81
 msgid "RCA AI"
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/fai-demo.cfg:100
+#: AI-demos/scenarios/fai_demo.cfg:101
 msgid ""
 "This scenario demonstrates a simple but complete AI written entirely in "
 "Formula AI by Wehrli Johan and Rinaldini Julien. Its point is to defeat the "
-"enemy leader.  Until that is done, it has the same behavior as the 'Zerg "
+"enemy leader. Until that is done, it has the same behavior as the 'Zerg "
 "rush' (Starcraft). The AI spawns an Elvish Archer and Elvish Fighter on "
 "every turn (if it has the gold), or an Elvish Scout if there are less than 2 "
-"Elvish Scouts.  The Elvish Scouts' goal is to capture the maximum number of "
-"villages.  If there are no more unowned villages, the scouts support the "
-"other units in attacking the enemy.  Other units, such as fighters and "
+"Elvish Scouts. The Elvish Scouts' goal is to capture the maximum number of "
+"villages. If there are no more unowned villages, the scouts support the "
+"other units in attacking the enemy. Other units, such as fighters and "
 "archers, only attack enemy units.\n"
 "This results in a very aggressive AI."
 msgstr ""
 
 #. [then]
-#: AI-demos/scenarios/fai-demo.cfg:116
+#: AI-demos/scenarios/fai_demo.cfg:117
 msgid "We lost ..."
 msgstr ""
 
 #. [scenario]: id=luaai-demo
-#: AI-demos/scenarios/luaai-demo.cfg:5
+#: AI-demos/scenarios/luaai_demo.cfg:5
 msgid "LuaAI"
 msgstr ""
 
 #. [side]: id=leader1, type=Lieutenant
-#: AI-demos/scenarios/luaai-demo.cfg:22
+#: AI-demos/scenarios/luaai_demo.cfg:22
 msgid "Northern Army"
 msgstr ""
 
 #. [side]: id=leader2, type=Lieutenant
-#: AI-demos/scenarios/luaai-demo.cfg:83
+#: AI-demos/scenarios/luaai_demo.cfg:67
 msgid "Southern Army"
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/luaai-demo.cfg:106
+#: AI-demos/scenarios/luaai_demo.cfg:90
 msgid "Spearmen go here"
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/luaai-demo.cfg:108
+#: AI-demos/scenarios/luaai_demo.cfg:92
 msgid "Bowmen go here"
 msgstr ""
 
 #. [event]
-#. [event]: (id=Mal An) profile profile}
-#: AI-demos/scenarios/luaai-demo.cfg:114 AI-demos/scenarios/prune-cart.cfg:237
-msgid "Note"
-msgstr ""
-
-#. [event]
-#: AI-demos/scenarios/luaai-demo.cfg:114
+#: AI-demos/scenarios/luaai_demo.cfg:98
 msgid ""
 "This scenario is meant as a simple demonstration of setting up a Lua AI "
-"engine and use it in a scenario.  Its purpose is <i>not</i> to provide an AI "
+"engine and use it in a scenario. Its purpose is <i>not</i> to provide an AI "
 "that plays well or does anything particularly useful, but to serve as code "
-"template for your own AI work.  The behavior is as follows:\n"
+"template for your own AI work. The behavior is as follows:\n"
 "\n"
 "- All spearmen are sent toward the signpost in the SW.\n"
 "- All bowmen are sent toward the  signpost in the SE.\n"
@@ -2611,286 +324,407 @@ msgid ""
 "\n"
 "Note that the differences in behavior (unit types, signpost locations and "
 "whether units attack or not) are determined by parameters that are passed to "
-"the AI functions rather than by different code.  In particular, whether "
-"units attack or not is determined simply by the candidate action evaluation "
-"score."
+"the AI functions rather than by different code. In particular, whether units "
+"attack or not is determined simply by the candidate action evaluation score."
+msgstr ""
+
+#. [event]
+#. [event]: (id=Mal An) profile profile}
+#: AI-demos/scenarios/luaai_demo.cfg:98 AI-demos/scenarios/prune_cart.cfg:238
+msgid "Note"
 msgstr ""
 
 #. [objective]: condition=win
-#: AI-demos/scenarios/luaai-demo.cfg:125
+#: AI-demos/scenarios/luaai_demo.cfg:109
 msgid "Defeat the enemy leader"
 msgstr ""
 
 #. [objective]: condition=lose
-#: AI-demos/scenarios/luaai-demo.cfg:129
+#: AI-demos/scenarios/luaai_demo.cfg:113
 msgid "Death of your leader"
 msgstr ""
 
 #. [objective]: condition=lose
-#: AI-demos/scenarios/luaai-demo.cfg:133
+#: AI-demos/scenarios/luaai_demo.cfg:117
 msgid "A Side 1 spearman or bowman makes it to a signpost"
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/luaai-demo.cfg:158
-msgid "I made it.  You lost!"
+#: AI-demos/scenarios/luaai_demo.cfg:142
+msgid "I made it. You lost!"
 msgstr ""
 
 #. [scenario]: id=rushes
-#: AI-demos/scenarios/mp-rushes.cfg:5
+#: AI-demos/scenarios/mp_rushes.cfg:5
 msgid "MP Rushes"
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/mp-rushes.cfg:38
+#: AI-demos/scenarios/mp_rushes.cfg:38
 msgid ""
-"They there.  We them get.\n"
+"They there. We them get.\n"
 "Grunt rush many players."
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/mp-rushes.cfg:40
+#: AI-demos/scenarios/mp_rushes.cfg:40
 msgid ""
-"It's <i>multiplayer</i>, not many players.  Maybe you better let me explain."
+"It's <i>multiplayer</i>, not many players. Maybe you better let me explain."
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/mp-rushes.cfg:41
+#: AI-demos/scenarios/mp_rushes.cfg:41
 msgid "Little goblin smart."
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/mp-rushes.cfg:42
+#: AI-demos/scenarios/mp_rushes.cfg:42
 msgid ""
-"Yeah, well, fortunately you don't need smarts to execute a good grunt rush.  "
+"Yeah, well, fortunately you don't need smarts to execute a good grunt rush. "
 "Anyway...\n"
 "\n"
 "This campaign includes several experimental AIs that can be used in "
-"multiplayer mode.  To play one of these AIs:\n"
+"multiplayer mode. To play one of these AIs:\n"
 "  - Go into the MP lobby (either local game or on the server)\n"
-"  - Select era: Default+Experimental AI\n"
+"  - Either select modification Experimental AI\n"
+"      or select era: Default+Experimental AI\n"
 "  - Select a map and options\n"
 "  - Select 'Computer Player' for the AI side(s)\n"
 "  - Select one of the new AIs\n"
 "\n"
 "Note:\n"
 "- The AI called 'ExpAI Ron: Generic Rush (any map)' has by now been added "
-"into mainline and is available there as 'Experimental AI'.  The mainline and "
+"into mainline and is available there as 'Experimental AI'. The mainline and "
 "AI-Demos versions are not necessarily exactly the same as changes are first "
 "tested in AI-Demos and implemented in mainline later."
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/mp-rushes.cfg:53
+#: AI-demos/scenarios/mp_rushes.cfg:54
 msgid "And now back to the start ..."
 msgstr ""
 
-#. [scenario]: id=prune-cart
+#. [scenario]: id=prune_cart
 #. [unit]: type=Ox Cart, id=cart
-#: AI-demos/scenarios/prune-cart.cfg:5 AI-demos/scenarios/prune-cart.cfg:176
+#: AI-demos/scenarios/prune_cart.cfg:5 AI-demos/scenarios/prune_cart.cfg:177
 msgid "Prune Cart"
 msgstr ""
 
 #. [side]: id=Vadak, type=Orcish Ruler
-#: AI-demos/scenarios/prune-cart.cfg:17
+#: AI-demos/scenarios/prune_cart.cfg:17
 msgid "Vadak"
 msgstr ""
 
+#. [side]: id=Bad Orc, type=Orcish Ruler
+#. [side]: id=Vadak, type=Orcish Ruler
+#: AI-demos/scenarios/prune_cart.cfg:23 AI-demos/scenarios/test.cfg:72
+msgid "Orcs"
+msgstr ""
+
 #. [side]: id=Mal An, type=Lich
-#: AI-demos/scenarios/prune-cart.cfg:137 AI-demos/scenarios/prune-cart.cfg:152
+#: AI-demos/scenarios/prune_cart.cfg:137 AI-demos/scenarios/prune_cart.cfg:152
 msgid "Mal An"
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/prune-cart.cfg:187
+#: AI-demos/scenarios/prune_cart.cfg:188
 msgid "AI moves Prune Cart here"
 msgstr ""
 
 #. [event]: (id=Mal An) profile profile}
-#: AI-demos/scenarios/prune-cart.cfg:193
-msgid "Brothers, make line.  Vadak promise Grnk protect cart."
+#: AI-demos/scenarios/prune_cart.cfg:194
+msgid "Brothers, make line. Vadak promise Grnk protect cart."
 msgstr ""
 
 #. [event]: (id=Mal An) profile profile}
-#: AI-demos/scenarios/prune-cart.cfg:195
+#: AI-demos/scenarios/prune_cart.cfg:196
 msgid ""
-"Skeleton minions, rise and burn that cart.  Under no circumstances may those "
-"magical prunes get to that goblin, Grnk.  Fail and you will get to feel the "
+"Skeleton minions, rise and burn that cart. Under no circumstances may those "
+"magical prunes get to that goblin, Grnk. Fail and you will get to feel the "
 "Master's wrath."
 msgstr ""
 
 #. [event]: (id=Mal An) profile profile}
-#: AI-demos/scenarios/prune-cart.cfg:197
-msgid "Save cart.  Pekzs send healer lizards, help brothers."
+#: AI-demos/scenarios/prune_cart.cfg:198
+msgid "Save cart. Pekzs send healer lizards, help brothers."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: AI-demos/scenarios/prune-cart.cfg:203
+#: AI-demos/scenarios/prune_cart.cfg:202
+msgid "Question for the Player"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: AI-demos/scenarios/prune_cart.cfg:204
 msgid ""
 "Vadak's orcs (custom AI) try to protect the cart with the invaluable prunes, "
-"while Mal An's skeletons try to destroy it.  Do you want to play the undead "
+"while Mal An's skeletons try to destroy it. Do you want to play the undead "
 "side or let the standard RCA AI do that?"
 msgstr ""
 
 #. [option]: speaker=narrator
-#: AI-demos/scenarios/prune-cart.cfg:208
+#: AI-demos/scenarios/prune_cart.cfg:206
+msgid "<span font='16'>I'll watch the two AIs fight it out.</span>"
+msgstr ""
+
+#. [option]: speaker=narrator
+#: AI-demos/scenarios/prune_cart.cfg:209
 msgid "<span font='16'>I'll play the undead.</span>"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: AI-demos/scenarios/prune-cart.cfg:219
+#: AI-demos/scenarios/prune_cart.cfg:220
 msgid "Another Question"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: AI-demos/scenarios/prune-cart.cfg:221
+#: AI-demos/scenarios/prune_cart.cfg:222
 msgid ""
-"Do you want the orcs to play with a stationary cart or with a moving cart?  "
+"Do you want the orcs to play with a stationary cart or with a moving cart? "
 "The stationary cart case is a better demonstration of the current "
-"capabilities of the custom AI.  The AI has more issues when the cart it "
+"capabilities of the custom AI. The AI has more issues when the cart it "
 "moving, although it often still wins."
 msgstr ""
 
 #. [option]: speaker=narrator
-#: AI-demos/scenarios/prune-cart.cfg:223
+#: AI-demos/scenarios/prune_cart.cfg:224
 msgid "<span font='16'>Use stationary cart</span>"
 msgstr ""
 
 #. [option]: speaker=narrator
-#: AI-demos/scenarios/prune-cart.cfg:230
+#: AI-demos/scenarios/prune_cart.cfg:231
 msgid "<span font='16'>Use moving cart</span>"
 msgstr ""
 
 #. [event]: (id=Mal An) profile profile}
-#: AI-demos/scenarios/prune-cart.cfg:237
+#: AI-demos/scenarios/prune_cart.cfg:238
 msgid ""
 "This scenario is fully operational, but the AI code is <span "
-"color='#A00000'>still under development</span>.  I would be very interested "
+"color='#A00000'>still under development</span>. I would be very interested "
 "in comments on which parts of the overall strategy could be improved.\n"
 "\n"
-"Note that the scenario is not yet optimized for speed.  Some moves have a "
-"noticeable delay.  On my computer this means something around half a "
-"second.  If it is much slower on your computer, please let me know and I "
-"will bump efficiency improvements up in priority."
+"Note that the scenario is not yet optimized for speed. Some moves have a "
+"noticeable delay. On my computer this means something around half a second. "
+"If it is much slower on your computer, please let me know and I will bump "
+"efficiency improvements up in priority."
 msgstr ""
 
 #. [objective]: condition=win
-#: AI-demos/scenarios/prune-cart.cfg:244
+#: AI-demos/scenarios/prune_cart.cfg:245
 msgid "Burn the cart"
 msgstr ""
 
 #. [objective]: condition=lose
-#: AI-demos/scenarios/prune-cart.cfg:248
+#: AI-demos/scenarios/prune_cart.cfg:249
 msgid "Cart gets to the signpost"
 msgstr ""
 
 #. [objective]: condition=lose
-#: AI-demos/scenarios/prune-cart.cfg:252
+#: AI-demos/scenarios/prune_cart.cfg:253
 msgid "Death of Mal An"
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/prune-cart.cfg:267
+#: AI-demos/scenarios/prune_cart.cfg:268
 msgid "I made it!  Now Grnk can have the magical prunes."
 msgstr ""
 
 #. [then]
-#: AI-demos/scenarios/prune-cart.cfg:289
+#: AI-demos/scenarios/prune_cart.cfg:290
 msgid "We did it!  Now Grnk can have the magical prunes."
 msgstr ""
 
 #. [event]
-#: AI-demos/scenarios/prune-cart.cfg:304
-msgid "Nooo!  All is lost.  We will never stop the Master now!"
+#: AI-demos/scenarios/prune_cart.cfg:305
+msgid "Nooo!  All is lost. We will never stop the Master now!"
 msgstr ""
 
-#: AI-demos/scenarios/test.cfg:9
+#. [scenario]: id=aid_switchboard
+#: AI-demos/scenarios/switchboard.cfg:5
+msgid "AI-demos Switchboard"
+msgstr ""
+
+#. [part]
+#: AI-demos/scenarios/switchboard.cfg:23
+msgid ""
+"<span font='16'>Hi, I'm Grnk the Frail. You may remember me from such "
+"instructional campaigns as 'Grnk the Mighty' and 'Why You Shouldn't Attack "
+"Peasants When There's A Mad Goblin Around.'\n"
+"\n"
+"This campaign is the home of a number of AI development projects, most "
+"notably two MP AIs dubbed 'Ron' and 'Fred' as well as several test and demo "
+"scenarios.  This is also where the Micro AIs were developed.  As those have "
+"now been moved into mainline, they are no longer part of this campaign.\n"
+"\n"
+"Fred currently boasts a >98% win rate against the RCA AI, but only on the "
+"Freelands map playing Northerners as Side 1.  He also still has significant "
+"problems playing against human players, so any comments on how to improve "
+"the AI would me most welcome.\n"
+"\n"
+"This add-on requires the most recent Wesnoth development version (1.11.7).\n"
+"\n"
+"In general, if you have comments, problems, suggestions or requests for "
+"additional AI behaviors, please visit our thread on the <span "
+"color='#00A000'>Wesnoth forums</span> at http://tinyurl.com/AI-mods</span>"
+msgstr ""
+
+#. [side]: id=Grnk, type=Goblin Spearman
+#: AI-demos/scenarios/switchboard.cfg:41
+msgid "Grnk the Frail"
+msgstr ""
+
+#. [side]: id=Grnk, type=Goblin Spearman
+#: AI-demos/scenarios/switchboard.cfg:49
+msgid "team_name^Grnk"
+msgstr ""
+
+#. [event]
+#: AI-demos/scenarios/switchboard.cfg:67
+msgid "<span color='#D0D0D0'>MP rushes</span>"
+msgstr ""
+
+#. [event]
+#: AI-demos/scenarios/switchboard.cfg:70
+msgid "<span color='#D0D0D0'>Test Scenario</span>"
+msgstr ""
+
+#. [event]
+#: AI-demos/scenarios/switchboard.cfg:73
+msgid "<span color='#D0D0D0'>Simple Lua AI Demo</span>"
+msgstr ""
+
+#. [event]
+#: AI-demos/scenarios/switchboard.cfg:76
+msgid "<span color='#D0D0D0'>Prune Cart</span>"
+msgstr ""
+
+#. [set_menu_item]: id=m91_rushes
+#: AI-demos/scenarios/switchboard.cfg:86
+msgid "MP Rush AIs (Lua AI)"
+msgstr ""
+
+#. [command]
+#: AI-demos/scenarios/switchboard.cfg:95
+msgid "Story only scenario that explains how to use the multiplayer rush AIs."
+msgstr ""
+
+#. [command]
+#: AI-demos/scenarios/switchboard.cfg:95
+msgid "MP rush AIs"
+msgstr ""
+
+#. [command]
+#. [set_menu_item]: id=m92_test
+#: AI-demos/scenarios/switchboard.cfg:101
+#: AI-demos/scenarios/switchboard.cfg:110
+msgid "Lua AI Test Scenario"
+msgstr ""
+
+#. [command]
+#: AI-demos/scenarios/switchboard.cfg:110
+msgid ""
+"This is a hard-core test scenario that is here for manual testing of AI "
+"functions or candidate actions. It provides a right-click menu option for "
+"doing so without having to reload.\n"
+"\n"
+"It can also be started from the commandline as a test scenario with 'Wesnoth "
+"-d -t aid_test'."
+msgstr ""
+
+#. [command]
+#. [set_menu_item]: id=m80_Lua_demo
+#: AI-demos/scenarios/switchboard.cfg:118
+#: AI-demos/scenarios/switchboard.cfg:127
+msgid "Simple Lua AI Demo"
+msgstr ""
+
+#. [command]
+#: AI-demos/scenarios/switchboard.cfg:127
+msgid ""
+"This scenario provides a simple template for setting up a Lua AI engine and "
+"scenario. The AI behavior itself is trivial and not particularly useful "
+"(some of the AI units simply move toward two map locations, with priority "
+"either higher or lower than attacks on enemies), it is only meant as a "
+"demonstration how to code this."
+msgstr ""
+
+#. [set_menu_item]: id=m90_cart
+#: AI-demos/scenarios/switchboard.cfg:133
+msgid "Prune Cart AI demo"
+msgstr ""
+
+#. [command]
+#: AI-demos/scenarios/switchboard.cfg:142
+msgid "Prune Cart AI Demo"
+msgstr ""
+
+#. [command]
+#: AI-demos/scenarios/switchboard.cfg:142
+msgid ""
+"This scenario features an orcish horde protecting a cart with magical prunes "
+"from an undead army, while the cart (slowly) makes its way through a "
+"mountainous area.  Unfinished."
+msgstr ""
+
+#. [set_menu_item]: id=m94_fai
+#: AI-demos/scenarios/switchboard.cfg:148
+msgid "Formula AI demo"
+msgstr ""
+
+#. [command]
+#: AI-demos/scenarios/switchboard.cfg:157
+msgid ""
+"This scenario contains a simple demonstration of setting up a full AI using "
+"Formula AI."
+msgstr ""
+
+#. [event]
+#: AI-demos/scenarios/switchboard.cfg:167
+msgid ""
+"Move me to any of the signposts to go to an AI demonstration. Information "
+"about each demonstration can be accessed by right-clicking on the respective "
+"signpost."
+msgstr ""
+
+#. [objective]: condition=win
+#: AI-demos/scenarios/switchboard.cfg:171
+msgid "Move Grnk to one of the signposts"
+msgstr ""
+
+#. [note]
+#: AI-demos/scenarios/switchboard.cfg:175
+msgid "Right-click on a signpost to get information about the scenario"
+msgstr ""
+
+#. [scenario]: id=aid_test
+#: AI-demos/scenarios/test.cfg:11
 msgid "aid_test"
 msgstr ""
 
-#. [ai]: id=luaAI-test
-#: AI-demos/scenarios/test.cfg:37
+#. [side]: id=Vanak, type=Orcish Ruler
+#: AI-demos/scenarios/test.cfg:30
+msgid "Vanak"
+msgstr ""
+
+#. [ai]: id=luaAI_test
+#: AI-demos/scenarios/test.cfg:38
 msgid "Lua AI Test"
 msgstr ""
 
 #. [set_menu_item]: id=m01
-#: AI-demos/scenarios/test.cfg:108
+#: AI-demos/scenarios/test.cfg:85
 msgid "Reload Lua code"
 msgstr ""
 
-#. [unit_type]: id=Bear, race=monster
-#: AI-demos/units/Bear.cfg:5
-msgid "Bear"
+#. [set_menu_item]: id=m06_kill_unit
+#: AI-demos/scenarios/test.cfg:96
+msgid "Kill Unit under Cursor"
 msgstr ""
 
-#. [unit_type]: id=Bear, race=monster
-#: AI-demos/units/Bear.cfg:17
+#. [objectives]
+#: AI-demos/scenarios/test.cfg:106
 msgid ""
-"Adult bears are known for going their own way; most bears would sooner flee "
-"a melee than throw themselves at risk. Some, though, for whatever reason, "
-"choose not to run. These bears are a terrifying sight to behold. An adult "
-"bear is a mass of muscle, claw, fur, and fury of almost unrivaled "
-"proportions: even the most skilled of warriors will not look lightly on the "
-"bulk of an angry, advancing bear."
-msgstr ""
-
-#. [attack]: type=impact
-#: AI-demos/units/Bear.cfg:60
-msgid "bearhug"
-msgstr ""
-
-#. [attack]: type=blade
-#: AI-demos/units/Bear.cfg:69
-msgid "claws"
-msgstr ""
-
-#. [unit_type]: id=Deer, race=monster
-#: AI-demos/units/Deer.cfg:5
-msgid "Deer"
-msgstr ""
-
-#. [unit_type]: id=Deer, race=monster
-#: AI-demos/units/Deer.cfg:18
-msgid ""
-"Deer are light-footed and can move easily across most any solid terrain."
-msgstr ""
-
-#. [attack]: type=impact
-#: AI-demos/units/Deer.cfg:63 AI-demos/units/Sheep.cfg:72
-msgid "head butt"
-msgstr ""
-
-#. [male]
-#: AI-demos/units/Deer.cfg:75
-msgid "male^Stag"
-msgstr ""
-
-#. [attack]: type=pierce
-#: AI-demos/units/Deer.cfg:81
-msgid "antlers"
-msgstr ""
-
-#. [unit_type]: id=Dog, race=monster
-#: AI-demos/units/Dog.cfg:5
-msgid "Sheep Dog"
-msgstr ""
-
-#. [unit_type]: id=Dog, race=monster
-#: AI-demos/units/Dog.cfg:19
-msgid ""
-"Sheep Dogs are highly disciplined and renowned for their loyalty and "
-"strength.  They ferociously and fearlessly attack any threat to the sheep "
-"they guard, while entirely ignoring herbivorous animals."
-msgstr ""
-
-#. [attack]: type=blade
-#: AI-demos/units/Dog.cfg:69 AI-demos/units/Tarantula.cfg:28
-msgid "fangs"
-msgstr ""
-
-#. [attack]: type=blade
-#: AI-demos/units/Dog.cfg:79
-msgid "fury"
+"This scenario can be started directly from the commandline with '-t aid_test'"
 msgstr ""
 
 #. [unit_type]: id=Ox Cart, race=mechanical
@@ -2902,97 +736,9 @@ msgstr ""
 #: AI-demos/units/Ox_cart.cfg:18
 msgid ""
 "Quank only provides the fastest oxen and the most comfortable carts, the "
-"super-deluxe model.  He could not possibly expose his customers to anything "
+"super-deluxe model. He could not possibly expose his customers to anything "
 "else.\n"
 "\n"
-"While the image looks like a horse cart, that is an optical illusion.  They "
+"While the image looks like a horse cart, that is an optical illusion. They "
 "are clearly ox carts."
-msgstr ""
-
-#. [unit_type]: id=Rabbit, race=monster
-#: AI-demos/units/Rabbit.cfg:5
-msgid "Rabbit"
-msgstr ""
-
-#. [unit_type]: id=Rabbit, race=monster
-#: AI-demos/units/Rabbit.cfg:18
-msgid ""
-"The rabbit is a cute creature living in the fields and forests. In its "
-"gnawing attack, striking from powerful incisors, resides the Wesnoth "
-"carrots' greatest fear. Alas, rabbits are victims of the appetite of many "
-"other nasty creatures like wolves or even humans, for their flesh is used in "
-"one of the most delicious known dishes. Legend has it that they follow a "
-"king rabbit by the name of Cedric."
-msgstr ""
-
-#. [attack]: type=blade
-#: AI-demos/units/Rabbit.cfg:22
-msgid "gnaw"
-msgstr ""
-
-#. [unit_type]: id=Ram, race=monster
-#: AI-demos/units/Ram.cfg:5
-msgid "Ram"
-msgstr ""
-
-#. [unit_type]: id=Ram, race=monster
-#. [unit_type]: id=Sheep, race=monster
-#: AI-demos/units/Ram.cfg:18 AI-demos/units/Sheep.cfg:18
-msgid ""
-"Sheep, both males and females, are dumb animals that are easily herded by "
-"dogs."
-msgstr ""
-
-#. [attack]: type=impact
-#: AI-demos/units/Ram.cfg:72
-msgid "horns"
-msgstr ""
-
-#. [unit_type]: id=Tarantula, race=monster
-#: AI-demos/units/Tarantula.cfg:5
-msgid "Tarantula"
-msgstr ""
-
-#. [unit_type]: id=Tarantula, race=monster
-#: AI-demos/units/Tarantula.cfg:22
-msgid ""
-"Tarantulas are solitary beasts that mostly live in deserts and mountains.  "
-"Their bite is painful and made worse by the fact that it is poisoned."
-msgstr ""
-
-#. [unit_type]: id=Tusker, race=monster
-#: AI-demos/units/Tusker.cfg:5
-msgid "Tusker"
-msgstr ""
-
-#. [unit_type]: id=Tusker, race=monster
-#: AI-demos/units/Tusker.cfg:34
-msgid ""
-"Tuskers are hardy livestock. Their powerful limbs make them good beasts of "
-"burden. Their thick wool and hides make coarse, but serviceable clothing and "
-"their meat is tough, but filling. But an angry or wild tusker is not to be "
-"trifled with."
-msgstr ""
-
-#. [attack]: type=blade
-#: AI-demos/units/Tusker.cfg:88 AI-demos/units/Tusklet.cfg:87
-msgid "tusks"
-msgstr ""
-
-#. [attack]: type=pierce
-#: AI-demos/units/Tusker.cfg:139
-msgid "tusk charge"
-msgstr ""
-
-#. [unit_type]: id=Tusklet, race=monster
-#: AI-demos/units/Tusklet.cfg:5
-msgid "Tusklet"
-msgstr ""
-
-#. [unit_type]: id=Tusklet, race=monster
-#: AI-demos/units/Tusklet.cfg:33
-msgid ""
-"Young tuskers are as notoriously bad-tempered as the adults of the species, "
-"if a little less of a challenge. But woe betide the unfortunate who comes "
-"between a Tusklet and its parents."
 msgstr ""
